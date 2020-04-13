@@ -8,3 +8,4 @@ Yiğit Ekin 21901784
 Mert Tereci 21802718
 Arda Eren 21902505
 Osman Semih Tiryaki 21801994
+Eyüp Berkan Sivrikaya 21803052
