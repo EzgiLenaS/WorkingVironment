@@ -15,4 +15,10 @@ On this page I will keep a weekly record of what I have done for the CS102 group
 - Looked for how to use Serializable interface efficiently so that our program can actually store links or directories
 - Worked on a Serializable and actually made it work by implementing a quick Person class ( Looking forward to actually using it for my project)
 - need a file to use Serializable? (if not how? look into it) if we need, how to store it in our application ( maybe bring the java code and the file in a folder and use .zip?)
+
+### ~ date ~ 2 May 2020
+- I researched and learned that the extension of the external applicaitons are .app which means that it is not a runnable file it is a normal file with different setup
+- Because of that fact i figrued that we can open external app on macos with Java.awt.Desktop.open( String path) method tried it with all of the app on my computer and it opened it all( even pdf and docx files) 
+- so now i am planning on knowing whether the same idea can be implemented on windows for the ones that without the extension .exe 
+- (If it can be used while inputting the maybe use a substring check to see whether it is an executable path? or ask the user for it? ask to the team)
 ****
