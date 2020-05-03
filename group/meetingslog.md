@@ -8,7 +8,7 @@ Below is a record of our project group meetings. This page will be submitted tog
 **Present:** Everyone  _**Absent:**_  None
 
 **Discussion:** 
-We reviewed progress. Member1 & member2 reported back, explaining that they had discovered rst and demonstrated some useful examples. Member3 had slept and has not yet completed his task, but promised to do so this week! We decided we need to do this, that, and the other, and divided the work between us. Next meeting planned for (date).
+
 We first determined main points of our project.
 We tried to find how we can open apps bu using java
 Yiğit showed the classes he wrote as a template and gave some ideas to open Web pages as well
