@@ -17,6 +17,9 @@ Going to learn java serializable.
 
 ### ~ 3.05.2020 ~
 Zoomed with group members to share work.
+Learned how to open files from desktop on java with browse and open methods.
+Learned difference between html/ftp.
+
 
 
 ****
