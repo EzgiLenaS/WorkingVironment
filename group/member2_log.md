@@ -5,13 +5,18 @@
 
 On this page I will keep a weekly record of what I have done for the CS102 group project. This page will be submitted together with the rest of the repository, in partial fulfillment of the CS102 course requirements.
 
-### ~ date ~
-This week I learn xyz and worked out...
+### ~ 30 april 2020 ~
+Learned gui,javafx.
+Trying to learn, simple databases, how to store value locally.
+Fundamental ideas of projects improved:gui stage/ using data base or not is still dilemma.
 
-### ~ date ~
-This week I helped abc brainstorm ideas for...
+### ~ 2.05.2020 ~
+Zoomed with group members to work sharing the project.
+Fundamental ideas improved.
+Going to learn java serializable. 
 
-### ~ date ~
-blah, blah, blah...
+### ~ 3.05.2020 ~
+Zoomed with group members to share work.
+
 
 ****
