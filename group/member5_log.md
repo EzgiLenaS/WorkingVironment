@@ -13,7 +13,10 @@ I tested the classes Yiğit created as templates to see whether they worked prop
 
 ### ~ 03 May 2020 ~
 
-After deciding to use Serializable class instead of using databases to store links, I did research on the Serializable class and how it proceeds.
+We did a zoom meeting as a group to discuss who will do which part of the project. In our meeting we decided to use Serializable class to store links as this application will be local. After deciding to use Serializable class instead of using databases to store links, I did research on the Serializable class and how it proceeds.
 
-Berkan found another method to open applications or executable files directly by selecting the file from its location. I tested it to see whether it worked for all type of files and the method worked.
+Yigit and I were selected to code the classes apart from the GUI. Also, Berkan showed us another method he found that opens applications or executable files directly by selecting the file from its location. I tested it to see whether it worked for all type of files and the method worked. This will be very helpful for our project as it makes the project more user friendly and makes the project have more access around the files.
+
+Moreover, we decided that we will not conclude accounts as this will be a local app.
+
 ****
