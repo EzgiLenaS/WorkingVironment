@@ -39,3 +39,6 @@ On this page I will keep a weekly record of what I have done for the CS102 group
 - uploaded my share to github
 - as my work is done early, will talk the others, get a part of GUI and help them about the GUI coding
 - also tried it with the UI part that Berkan shared with us and it also worked perfectly without any errors
+- As our project is mainly about File class, i read chapter 7 in our coursebook and expanded my knowledge about the class and files in general
+- Learned how to create a folder with file class ( will use it to store all the .txt files that comes form the serializable interface)
+- Also tried whether Serilizable creates a new file for all the changes, turned out it does not ( better for our project)
