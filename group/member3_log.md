@@ -15,7 +15,7 @@ On this page I will keep a weekly record of what I have done for the CS102 group
 - Worked on a Serializable and actually made it work by implementing a quick Person class ( Try with ArrayLists next week)
 - Really need a file to use Serializable? will ask the group next week (if not how? look into it) if we need, how to store it in our application ( maybe bring the java code and the file in a folder and use .zip?)
 
-### ~ date ~ week bwginning with 27 April 2020
+### ~ date ~ week beginning with 27 April 2020
 - I researched and learned that the extension of the external applicaitons are .app which means that it is not a runnable file it is a normal file with different setup
 - Because of that fact i figrued that we can open external app on macos with Java.awt.Desktop.open( String path) method tried it with all of the app on my computer and it opened it all( even pdf and docx files and chess game) 
 - so now i am planning on knowing whether the same idea can be implemented on windows for the ones that without the extension .exe 
@@ -29,3 +29,13 @@ On this page I will keep a weekly record of what I have done for the CS102 group
 - For ftp, i learned that it is file transfer protocol (the user can download it and open it externally? or use java classes to access the data in it?)
 - Also, as a team, we conlcuded that database is unnecessary as our applicaiton is local and decided to use Serializable interface to store data
 - I tried the Serializable class with an ArrayList and succesfully unserialize it after turning object into null
+
+### ~ date ~ week beginning with 4 May 2020
+- This week we had discussed with Arda about sharing the work for coding the back-end of our project
+- After that we finished the classes without any problem with all comments and such 
+- created a package called workingNvrionment.backEnd (thinking that our friends will create workingNvironment.frontEnd and combine those two in a package)
+- Tested the classes with arda and saw that it worked perfectly
+- sent my code to arda so that he can test as well ( worked for 2 operating systems)
+- uploaded my share to github
+- as my work is done early, will talk the others, get a part of GUI and help them about the GUI coding
+- also tried it with the UI part that Berkan shared with us and it also worked perfectly without any errors
