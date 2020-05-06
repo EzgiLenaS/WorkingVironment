@@ -1,0 +1,62 @@
+package workingNvironment.backEnd;
+
+import java.util.ArrayList;
+import java.io.Serializable;
+
+public class Profile implements Serializable
+{
+   //properties
+   private ArrayList<AppOpener> boxes;
+   
+   //constructor
+   public Profile()
+   {
+      boxes = new ArrayList<AppOpener>(); 
+   }
+   
+   //methods
+   
+   /*
+    * This method gets the links of the app added by the user 
+    * @param none
+    * @return ArrayList links that includes the links of the app 
+    */ 
+   public ArrayList getBoxes()
+   {
+      return boxes;
+   }
+   
+   /*
+    * This method gets the links of the app added by the user 
+    * @param none
+    * @return ArrayList links that includes the links of the app 
+    */ 
+   public void addBox( AppOpener box)
+   {
+      boxes.add( box);
+   }
+   
+   /*
+    * This method remove
+    * @param none
+    * @return ArrayList links that includes the links of the app 
+    */ 
+   public void removeBox( int index)
+   {
+      boxes.remove( index);
+   }
+   
+   /*
+    * This method clears the profile by deleting all the boxes
+    * @param none
+    * @return none
+    */ 
+   public void clearProfile()
+   {
+      for ( int i = 0; i < boxes.size(); i++)
+      {
+         boxes.remove( i);
+      }
+   }
+   
+}
