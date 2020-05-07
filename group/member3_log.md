@@ -42,3 +42,5 @@ On this page I will keep a weekly record of what I have done for the CS102 group
 - As our project is mainly about File class, i read chapter 7 in our coursebook and expanded my knowledge about the class and files in general
 - Learned how to create a folder with file class ( will use it to store all the .txt files that comes form the serializable interface)
 - Also tried whether Serilizable creates a new file for all the changes, turned out it does not ( better for our project)
+- Today i looked at how can we create application with multiple framed in swing ( turns out that you can only do it with card layout which was is not exactly what we want) but javafx provides you ways to do that.
+- i attended to a meeting with the friends and helped them thorugh the process of decision making about what to do in UI
