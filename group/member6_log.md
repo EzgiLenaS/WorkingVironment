@@ -12,8 +12,11 @@ Revised our user interface design document and made a couple of changes to it
 I have attanded zoom meeting 
 I offered some ideas for GUI design stage and discussed with my friends
 
-### ~ date ~
-This week I helped abc brainstorm ideas for...
+### ~ 07.05.2020 ~
+This week ı made my research about Intellij idea and JavaFX scene builder
+ı watched couple of videos and looked at Java API 
+Downloaded and installed Intellij and practiced it a little bit 
+Joined meeting and tried to give some ideas
 
 ### ~ date ~
 blah, blah, blah...
