@@ -27,6 +27,9 @@ Searching algorithm for the boxes created.
 Javafx scenes creating.
 Trying to solve how to add background and change the color.
 Methods of the box panels has created.
+FXML/Scene builder codes created.
+Linkedview created.
+
 
 
 ****
