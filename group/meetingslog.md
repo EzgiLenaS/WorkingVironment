@@ -33,10 +33,20 @@ In the same time, Arda and Yiğit will find a way to solution to how we can link
 We decided to come together and try to finish the main parts of GUI design stage in another meeting tomorrow.
 Also we will try to do as much as we can, after that we will split the rest of the work into very little pieces and try to complete seperately.
 Next meeting: Tomorrow
-****
-### Meeting ~ (date, duration)
-****
-blah, blah, blah...
 
+****
+### Meeting ~ (07.05.2020, 4 hours)
+****
+
+**Present:** Everyone  _**Absent:**_  None
+
+**Discussion:**
+
+Today we tried to visualize what we are going to do 
+Also we looked at some JavaFX classes we need and determined to use listview class to exhibit our boxes
+We divided the work 2 pieces
+First part, the home page will be done by Osman Semih, Berkan and Sait
+Second part, arrangement of boxes and adding links and apps will be done by Lena and Mert
+Next Meeting: TBD
 ****
 ****
