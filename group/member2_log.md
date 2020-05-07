@@ -20,6 +20,13 @@ Zoomed with group members to share work.
 Learned how to open files from desktop on java with browse and open methods.
 Learned difference between html/ftp.
 
+### ~ 7.05.2020 ~
+Zoomed with group members to discuss serializable and layouts.
+Serializable output input file output input object output input methods discussed.
+Searching algorithm for the boxes created.
+Javafx scenes creating.
+Trying to solve how to add background and change the color.
+Methods of the box panels has created.
 
 
 ****
