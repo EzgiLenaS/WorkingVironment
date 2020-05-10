@@ -18,7 +18,13 @@ This week ı made my research about Intellij idea and JavaFX scene builder
 Downloaded and installed Intellij and practiced it a little bit 
 Joined meeting and tried to give some ideas
 
-### ~ date ~
-blah, blah, blah...
-
+### ~ 10.05.2020 ~
+Today we had a little meeting with Berkan and Sait Can 
+We tried to go as much as we can in 3 hours
+First we handled the all the parts but Listview of Boxes
+We placed our logo and delete, deleteall and add buttons 
+Then we looked and figured out how to select items from Listview 
+We find how to edit String items and still trying to do it for objects
+We looked at Observablelist, objectproperty, selection model and Multiple selection classes
+None of them solved our problem but we are still searching... 
 ****
