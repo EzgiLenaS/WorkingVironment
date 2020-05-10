@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="655.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <BorderPane cache="true" cacheHint="SCALE" prefHeight="537.0" prefWidth="600.0">
+         <right>
+            <VBox prefHeight="360.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#press" prefHeight="110.0" prefWidth="105.0" text="Delete" />
+                  <Button mnemonicParsing="false" onAction="#press" prefHeight="125.0" prefWidth="101.0" text="Deleteall" />
+                  <Button mnemonicParsing="false" onAction="#press" prefHeight="127.0" prefWidth="103.0" text="Add" />
+               </children>
+            </VBox>
+         </right>
+         <top>
+            <ImageView fitHeight="200.0" fitWidth="200.0" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@1a200132-b173-4324-9115-b07f83164c13.jpg" />
+               </image>
+            </ImageView>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
