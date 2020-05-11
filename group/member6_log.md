@@ -27,4 +27,9 @@ Then we looked and figured out how to select items from Listview
 We find how to edit String items and still trying to do it for objects
 We looked at Observablelist, objectproperty, selection model and Multiple selection classes
 None of them solved our problem but we are still searching... 
-****
+
+### ~ 11.05.2020 ~
+Today we had a little meeting with Berkan
+We tried to write code for the lauch button for an hour
+We managed to convert arraylist to observablelist
+We decided to handle delete button in this way
