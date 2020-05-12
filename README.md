@@ -13,10 +13,10 @@ It's platform is desktop
    
 ## Project Status
 + **Group/project Selection:** completed (date)
-+ **Requirements:** completed ( 25 February)
-+ **UI Design:** completed ( 31 March)
-+ **Detailed Design:** in progress
-+ **Implementation:** not started!
++ **Requirements:** completed (25 February)
++ **UI Design:** completed (31 March)
++ **Detailed Design:** completed (12 May)
++ **Implementation:** in progress
 + **Reflections:** not yet!
 
 [Group Meetings Log](https://github.com/EzgiLenaS/WorkingVironment/blob/master/group/meetingslog.md)
