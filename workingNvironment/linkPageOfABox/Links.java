@@ -7,7 +7,7 @@ package linkpageofabox;
 
 /**
  *
- * @author EZGİ LENA SÖNMEZ
+ * @author Ezgi Lena SÖNMEZ & Mert TERECİ
  */
 public class Links
 {
