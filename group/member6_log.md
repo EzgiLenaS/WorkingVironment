@@ -33,3 +33,9 @@ Today we had a little meeting with Berkan
 We tried to write code for the lauch button for an hour
 We managed to convert arraylist to observablelist
 We decided to handle delete button in this way
+
+### ~ 17.05.2020 ~
+we gathered Berkan and Saitcan again for 2 hours 
+WE kinda managed to make launch button working
+We can open multiple webpages and and programs that we initialized one by one in just one click
+But we could not pull the programs from an arraylist yet 
