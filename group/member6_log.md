@@ -35,7 +35,14 @@ We managed to convert arraylist to observablelist
 We decided to handle delete button in this way
 
 ### ~ 17.05.2020 ~
-we gathered Berkan and Saitcan again for 2 hours 
+we came together with Berkan and Saitcan again for 2 hours 
 WE kinda managed to make launch button working
 We can open multiple webpages and and programs that we initialized one by one in just one click
 But we could not pull the programs from an arraylist yet 
+
+### ~ 18.05.2020 ~
+I met with Berkan and Saitcan again 
+We split the work a little bit 
+I wrote the code for MainScreenPanel class 
+But when we split buttons from main class it became harder to change scenes from other classes
+Eventually I managed to do it then we started to do managebutton and changed the scene to managescreen panel 
