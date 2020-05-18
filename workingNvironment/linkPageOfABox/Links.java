@@ -7,7 +7,8 @@ package linkpageofabox;
 
 /**
  *
- * @author EZGİ LENA SÖNMEZ
+ * @author Ezgi Lena SÖNMEZ & Mert TERECİ
+ * @version 1.0
  */
 public class Links
 {

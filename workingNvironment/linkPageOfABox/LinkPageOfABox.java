@@ -13,7 +13,8 @@ import workingNvironment.backEnd.Box;
 
 /**objects to observable list to javafx table
  *
- * @author EZGİ LENA SÖNMEZ
+ * @author Mert TERECİ & Ezgi Lena SÖNMEZ
+ * version 1.0s
  */
 public class LinkPageOfABox extends Application
 {
