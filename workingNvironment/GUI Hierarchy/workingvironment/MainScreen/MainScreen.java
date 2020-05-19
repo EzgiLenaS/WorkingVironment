@@ -94,7 +94,7 @@ public class MainScreen extends     Application
    {
       if(e.getSource() == button){          
          //window.setScene(scene2);
-//         list.getItems().addAll(new LaunchManageBox("weeeqw" , new Box("lö")));
+//         list.getItems().addAll(new LaunchManageBox("weeeqw" , new Box("lï¿½")));
          window.setScene(scene3/*lenaScreen*/);
          
       }
