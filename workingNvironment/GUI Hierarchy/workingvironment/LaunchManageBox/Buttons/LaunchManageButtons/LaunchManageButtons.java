@@ -1,0 +1,32 @@
+package LaunchManageBox.Buttons.LaunchManageButtons;
+import javafx.scene.control.Button;
+import javafx.scene.control.*;
+import javafx.event.ActionEvent;
+import javafx.event.*;
+/* Description: class for buttons
+ * @author Berkan Sivrikaya
+ * @date 07.05.2020
+ */
+
+public class LaunchManageButtons extends  Button 
+                                //implements  EventHandler<ListView.EditEvent<T>>
+{
+   //preoperties
+   
+   //constructors
+   public LaunchManageButtons(String name)
+   {
+      super(name);
+     // this.setOnAction(this);
+      this.setPrefSize(85, 25);
+      
+   }
+   //methods
+//   
+//   public void handle(ListView.EditEvent<T> e)
+//   {
+//      //iteration or manage part
+//      System.out.println("iteration or Manage screen");}
+////   
+   
+}

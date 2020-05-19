@@ -1,0 +1,8 @@
+package workingNvironment.backEnd;
+
+import java.io.Serializable;
+
+abstract class Shortcut implements Serializable
+{
+   abstract void run();
+}

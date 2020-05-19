@@ -1,0 +1,75 @@
+package workingNvironment.backEnd;
+
+import java.awt.Desktop;
+import java.io.File;
+import java.io.IOException;
+import java.net.URI;
+
+/**
+ * A class for WebPage
+ * @author Yigit Ekin 
+ * @version 1.0 
+ */
+public class WebPageOpener extends Shortcut 
+{
+   // properties 
+   private String name;
+   private URI uri;
+   
+   // constructors 
+   public WebPageOpener( String name, String uriToGive) 
+   {
+      this.name = name;
+      try
+      {
+      uri = new URI( uriToGive);
+      } 
+      
+      catch( Exception e) 
+      {
+         e.printStackTrace();
+      }
+   }
+   
+   // methods 
+   /** 
+    * this method return the name of the WebPage  
+    * @param none 
+    * @return name the name of the WebPage 
+    */  
+   public String getName()
+   {
+      return name;
+   }
+   
+   /** 
+    * this method return the uri of the WebPage  
+    * @param none 
+    * @return uri the uri of the WebPage 
+    */  
+   public URI getURI()
+   {
+      return uri;
+   }
+   
+   /** 
+    * this method opens the WebPage 
+    * @param none 
+    * @return none
+    */  
+   public void run()
+   {  
+      try
+      {   
+         if (java.awt.Desktop.getDesktop().isDesktopSupported())
+         {
+            java.awt.Desktop.getDesktop().browse( uri);
+         }  
+      } 
+      
+      catch (Exception e) 
+      {   
+         e.printStackTrace();
+      }
+   }
+}
