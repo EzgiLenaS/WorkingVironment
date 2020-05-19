@@ -1,12 +1,11 @@
+package linkpageofabox;
 
-//package linkpageofabox;
-
+import java.io.File;
+import java.util.ArrayList;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
@@ -16,17 +15,19 @@ import javafx.scene.layout.VBox;
 import javafx.stage.FileChooser;
 import workingNvironment.backEnd.AppOpener;
 import workingNvironment.backEnd.Box;
+import workingNvironment.backEnd.Shortcut;
 import workingNvironment.backEnd.WebPageOpener;
 
 /**
  *
- * @author Mert Tereci and Ezgi Lena Sönmez
+ * @author Mert Tereci and Ezgi Lena S?nmez 
+ * @version 2.0
  */
 public class ManageScreenPanel extends HBox 
 {
-//    ArrayList<Shortcut> 
-    TableView<Links> linksTable;
-    TableColumn<Links, String> linksColumn;
+    ArrayList<Shortcut> array;
+    TableView<Shortcut> linksTable;
+    TableColumn<Shortcut, String> linksColumn;
     TextField nameOfLink;
     TextField urlOfLink;
     TextField nameOfApp;
@@ -37,12 +38,12 @@ public class ManageScreenPanel extends HBox
     {
         super(15);
         
-        this.box = box;
-        
+        box = new Box("asd");//box = box; array = bob.gettBox();
+        array = box.getBox();
         //Links name column
         linksColumn = new TableColumn<>("links");
         linksColumn.setMinWidth(300);
-        linksColumn.setCellValueFactory( new PropertyValueFactory<>("links") );
+        linksColumn.setCellValueFactory( new PropertyValueFactory<>("name") );
     
         //Name input
         nameOfLink = new TextField();
@@ -65,8 +66,11 @@ public class ManageScreenPanel extends HBox
         Button backButton = new Button( "Back" );
         backButton.setOnAction( e -> turnToHomePage() );
         //add Button
-        Button addButton = new Button( "Add" );
-        addButton.setOnAction( e -> addButtonClicked() );
+        Button addButtonWeb = new Button( "AddWeb" );
+        addButtonWeb.setOnAction( e -> addButtonWebClicked() );
+        //add Button
+        Button addButtonApp = new Button( "AddApp" );
+        addButtonApp.setOnAction( e -> addButtonAppClicked() );
         //delete Button
         Button deleteButton = new Button( "Delete" );
         deleteButton.setOnAction( e -> deleteButtonClicked() );
@@ -75,7 +79,7 @@ public class ManageScreenPanel extends HBox
         VBox vBox = new VBox();
         vBox.setPadding( new Insets( 10, 10, 10, 10 ) );
         vBox.setSpacing( 10 );
-        vBox.getChildren().addAll( nameOfLink, urlOfLink, nameOfApp, addButton, deleteButton );
+        vBox.getChildren().addAll( nameOfLink, urlOfLink, addButtonWeb, nameOfApp, addButtonApp, deleteButton );
         
         linksTable = new TableView<>();
         linksTable.setItems( getLinks() );
@@ -99,30 +103,47 @@ public class ManageScreenPanel extends HBox
     }
     
     //add Button Clicked
-    public void addButtonClicked()
+    public void addButtonWebClicked()
     {
-        FileChooser chooser = new FileChooser();
-        //File file = chooser.showOpenDialog( ownerWindow );
-        WebPageOpener open = new WebPageOpener(nameOfLink.getText(), nameOfLink.getText());
-
-        box.getBox().add( open );
-
+        WebPageOpener open = new WebPageOpener( nameOfLink.getText(), urlOfLink.getText() );
+        array.add( open );
+        
+        linksTable.setItems( getLinks() );
+        
         nameOfLink.clear();
+        urlOfLink.clear();
+    }
+    public void addButtonAppClicked()
+    {
+//        //FileChooser chooser = new FileChooser();
+//        //File file = chooser.showOpenDialog( ownerWindow );
+//        //WebPageOpener open = new WebPageOpener(nameOfLink.getText(), urlOfLink.getText());
+//        //AppOpener open = new AppOpener( file, file );
+//        //array.add( open );
+//        nameOfLink.clear();
+//        urlOfLink.clear();
+//        linksTable.setItems( getLinks() );
+//        for( int i = 0; i < array.size(); i++ )
+//        {
+//            System.out.println( array.get( i ) );
+//            System.out.println( "control" );
+//        }
     }
     
     //delete Button Clicked
     public void deleteButtonClicked()
     {
-        linksTable.getSelectionModel().setSelectionMode( SelectionMode.MULTIPLE );
-        ObservableList<Links> list = linksTable.getSelectionModel().getSelectedItems();
-        //System.out.println( "lala" + list.get( 0 ) );
-        linksTable.getItems().removeAll( list );
-        //System.out.println( "lili" + list.get( 0 ) );
-//        ObservableList<Links> linksSelected, allLinks;
-//        allLinks = linksTable.getItems();
-//        linksSelected = linksTable.getSelectionModel().getSelectedItems();
-//        
-//        linksSelected.forEach( allLinks::remove );
+//        linksTable.getSelectionModel().setSelectionMode( SelectionMode.MULTIPLE );
+//        ObservableList<Shortcut> list = linksTable.getSelectionModel().getSelectedItems();
+//        //System.out.println( "lala" + list.get( 0 ) );
+//        linksTable.getItems().removeAll( list );
+//        array.remove(list);
+//        //System.out.println( "lili" + list.get( 0 ) );
+////        ObservableList<Links> linksSelected, allLinks;
+////        allLinks = linksTable.getItems();
+////        linksSelected = linksTable.getSelectionModel().getSelectedItems();
+////        
+////        linksSelected.forEach( allLinks::remove );
     }
     
     public void turnToHomePage()
@@ -131,23 +152,13 @@ public class ManageScreenPanel extends HBox
     }
 
     //get all of the links
-    public ObservableList<Links> getLinks()
+    public ObservableList<Shortcut> getLinks()
     {
-        ObservableList<Links> links = FXCollections.observableArrayList();
-//        for( int i = 0; i < anan.size(); i++ )
-//        {
-//            box.getBox().get( 0 ).getName();
-            //WebPageOpener openneerr = (WebPageOpener)box.getBox().get( i );
-            links.add( new Links( "" ) );//Casting?
-//        }//(WebPageOpener)(box.getBox().get(i)).getName()
-        //box.get(i).getName
-        
-        links.add( new Links( "netbeans" ) );
-        links.add( new Links( "bits and pieces" ) );
-        links.add( new Links( "spotify" ) );
-        links.add( new Links( "whatsapp" ) );
-        links.add( new Links( "moodle" ) );
-
+        ObservableList<Shortcut> links = FXCollections.observableArrayList();
+        for( int i = 0; i < array.size(); i++ )
+        {
+            links.add( array.get( i ) );//Casting?
+        }
         return links;
     }
 }
