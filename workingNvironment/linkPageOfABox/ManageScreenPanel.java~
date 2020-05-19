@@ -21,7 +21,7 @@ import workingNvironment.backEnd.WebPageOpener;
 
 /**
  *
- * @author Mert Tereci and Ezgi Lena Sönmez 
+ * @author Mert Tereci and Ezgi Lena SÃ¶nmez 
  * @version 2.0
  */
 public class ManageScreenPanel extends HBox 
@@ -47,7 +47,7 @@ public class ManageScreenPanel extends HBox
         //Links name column
         linksColumn = new TableColumn<>("links");//name of column
         linksColumn.setMinWidth(300);
-        //?????????????????????????????????????????????????????????????**bu cellvaluenun aldýðý getname hangisi?
+        //?????????????????????????????????????????????????????????????**bu cellvaluenun aldÄ±ÄŸÄ± getname hangisi?
         linksColumn.setCellValueFactory( new PropertyValueFactory<>("name") );//this takes the getName for websites and apps
     
         //Name input
@@ -141,17 +141,15 @@ public class ManageScreenPanel extends HBox
     //delete Button Clicked
     public void deleteButtonClicked()
     {
-        linksTable.getSelectionModel().setSelectionMode( SelectionMode.MULTIPLE );
-        ObservableList<Shortcut> list = linksTable.getSelectionModel().getSelectedItems();
-        //array.remove(list);
+//        linksTable.getSelectionModel().setSelectionMode( SelectionMode.MULTIPLE );
+//        ObservableList<Shortcut> list = linksTable.getSelectionModel().getSelectedItems();
+//        //array.remove(list);
+//        linksTable.getItems().removeAll( list );
 //        for( int i = 0; i < array.size(); i++ )
 //        {
-//            array.remove(list.get( i ));
+//            array.remove(list.get( i - 1 ));
 //        }
-        array.removeAll(list);
-        linksTable.getItems().removeAll( list );
-        
-        //
+        //array.remove(list);
 //        //System.out.println( "lili" + list.get( 0 ) );
 ////        ObservableList<Links> linksSelected, allLinks;
 ////        allLinks = linksTable.getItems();
