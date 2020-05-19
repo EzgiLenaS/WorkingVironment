@@ -6,6 +6,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;
+import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
@@ -20,89 +21,101 @@ import workingNvironment.backEnd.WebPageOpener;
 
 /**
  *
- * @author Mert Tereci and Ezgi Lena S?nmez 
+ * @author Mert Tereci and Ezgi Lena Sönmez 
  * @version 2.0
  */
 public class ManageScreenPanel extends HBox 
 {
-    ArrayList<Shortcut> array;
-    TableView<Shortcut> linksTable;
-    TableColumn<Shortcut, String> linksColumn;
-    TextField nameOfLink;
-    TextField urlOfLink;
-    TextField nameOfApp;
+    //properties
+    ArrayList<Shortcut> array;//gets the box.getBox => arraylist<shortcut> objects
+    TableView<Shortcut> linksTable;// this is the table which has column(s)
+    TableColumn<Shortcut, String> linksColumn;// this provides to show the websites and app's names in the table for user
+    TextField nameOfLink;// user enters the name of the website link
+    TextField urlOfLink;// user enters the url of the website
+    TextField nameOfApp;// ??????????????????????????????????????????????
+    TextField nameOfBox;
     
-    Box box;
+    Box box;// is a property for calling the arraylist<shortcut>
     
     public ManageScreenPanel( Box box ) throws Exception
     {
         super(15);
         
-        box = new Box("asd");//box = box; array = bob.gettBox();
+        box = new Box("asd");//this.box = box; array = bob.gettBox();
         array = box.getBox();
+        
         //Links name column
-        linksColumn = new TableColumn<>("links");
+        linksColumn = new TableColumn<>("links");//name of column
         linksColumn.setMinWidth(300);
-        linksColumn.setCellValueFactory( new PropertyValueFactory<>("name") );
+        //?????????????????????????????????????????????????????????????**bu cellvaluenun aldığı getname hangisi?
+        linksColumn.setCellValueFactory( new PropertyValueFactory<>("name") );//this takes the getName for websites and apps
     
         //Name input
         nameOfLink = new TextField();
-        nameOfLink.setPromptText( "Link Name" );
+        nameOfLink.setPromptText( "Link Name" );//back word to show where is for entering the name of the link
         nameOfLink.setMinWidth(100);
+        
         //urlOfLink
         urlOfLink = new TextField();
-        urlOfLink.setPromptText( "url" );
+        urlOfLink.setPromptText( "url" );//back word to show where is for entering the url of the link
         urlOfLink.setMinWidth(100);
+        
         //nameOfApp
         nameOfApp = new TextField();
-        nameOfApp.setPromptText( "App Name" );
+        nameOfApp.setPromptText( "App Name" );//????????????????????????????????is that necessary?
         nameOfApp.setMinWidth(100);
         
         //nameOfBox
-        TextField nameOfBox = new TextField();
-        nameOfBox.setPromptText( "Box Name" ); 
+        nameOfBox = new TextField();
+        nameOfBox.setPromptText( box.getName() ); 
+        nameOfBox.setOnAction( e -> changingName() );
       
-        //Back button
+        //Back button and its method
         Button backButton = new Button( "Back" );
         backButton.setOnAction( e -> turnToHomePage() );
-        //add Button
+        
+        //add Button and its method
         Button addButtonWeb = new Button( "AddWeb" );
         addButtonWeb.setOnAction( e -> addButtonWebClicked() );
-        //add Button
+        
+        //add Button and its method
         Button addButtonApp = new Button( "AddApp" );
         addButtonApp.setOnAction( e -> addButtonAppClicked() );
-        //delete Button
+        
+        //delete Button and its method
         Button deleteButton = new Button( "Delete" );
         deleteButton.setOnAction( e -> deleteButtonClicked() );
 
         //Right side of the page
-        VBox vBox = new VBox();
-        vBox.setPadding( new Insets( 10, 10, 10, 10 ) );
-        vBox.setSpacing( 10 );
-        vBox.getChildren().addAll( nameOfLink, urlOfLink, addButtonWeb, nameOfApp, addButtonApp, deleteButton );
+        VBox rightSide = new VBox();
+        rightSide.setPadding( new Insets( 10, 10, 10, 10 ) );
+        rightSide.setSpacing( 10 );
+        rightSide.getChildren().addAll( nameOfLink, urlOfLink, addButtonWeb, nameOfApp, addButtonApp, deleteButton );
         
+        //initializing the table view and add the column in it and adding the links in to the column
         linksTable = new TableView<>();
-        linksTable.setItems( getLinks() );
-        linksTable.getColumns().addAll( linksColumn );
+        linksTable.setItems( getLinks() );// takes the links to show on table in gui
+        linksTable.getColumns().addAll( linksColumn );// to show in column on the table in the gui (:
         
-        HBox hBox = new HBox();
-        hBox.getChildren().addAll( backButton, nameOfBox );
-        hBox.setPadding( new Insets( 10, 10, 10, 10 ) );
-        hBox.setSpacing( 10 );
+        //top part of the gui 
+        HBox hBoxOfTop = new HBox(); //top of the gui which has back button and textfield for changing 
+        hBoxOfTop.getChildren().addAll( backButton, nameOfBox );
+        hBoxOfTop.setPadding( new Insets( 10, 10, 10, 10 ) );
+        hBoxOfTop.setSpacing( 10 );
         
         //The horizontal place of table and buttons
         HBox hBoxOfBottom = new HBox();
-        hBoxOfBottom.getChildren().addAll( linksTable, vBox );
+        hBoxOfBottom.getChildren().addAll( linksTable, rightSide );
         
-        //Vbox for adding back button and label
-        VBox buttonLabel = new VBox();
-        buttonLabel.getChildren().addAll( hBox, hBoxOfBottom );
+        //Vbox for adding back button, name of box, table, and buttons
+        VBox allLinkPage = new VBox();
+        allLinkPage.getChildren().addAll( hBoxOfTop, hBoxOfBottom );
         
         
-        this.getChildren().addAll( buttonLabel  );
+        this.getChildren().addAll( allLinkPage );
     }
     
-    //add Button Clicked
+    //add Button Clicked for web 
     public void addButtonWebClicked()
     {
         WebPageOpener open = new WebPageOpener( nameOfLink.getText(), urlOfLink.getText() );
@@ -113,21 +126,16 @@ public class ManageScreenPanel extends HBox
         nameOfLink.clear();
         urlOfLink.clear();
     }
+    
     public void addButtonAppClicked()
     {
-//        //FileChooser chooser = new FileChooser();
-//        //File file = chooser.showOpenDialog( ownerWindow );
-//        //WebPageOpener open = new WebPageOpener(nameOfLink.getText(), urlOfLink.getText());
-//        //AppOpener open = new AppOpener( file, file );
-//        //array.add( open );
-//        nameOfLink.clear();
-//        urlOfLink.clear();
-//        linksTable.setItems( getLinks() );
-//        for( int i = 0; i < array.size(); i++ )
-//        {
-//            System.out.println( array.get( i ) );
-//            System.out.println( "control" );
-//        }
+        FileChooser fileChooser = new FileChooser();  
+        File file = fileChooser.showOpenDialog( LinkPageOfABox.window );
+
+        AppOpener open = new AppOpener( nameOfApp.getText(), file );
+        array.add( open );
+        nameOfApp.clear();
+        linksTable.setItems( getLinks() );
     }
     
     //delete Button Clicked
@@ -135,9 +143,13 @@ public class ManageScreenPanel extends HBox
     {
 //        linksTable.getSelectionModel().setSelectionMode( SelectionMode.MULTIPLE );
 //        ObservableList<Shortcut> list = linksTable.getSelectionModel().getSelectedItems();
-//        //System.out.println( "lala" + list.get( 0 ) );
+//        //array.remove(list);
 //        linksTable.getItems().removeAll( list );
-//        array.remove(list);
+//        for( int i = 0; i < array.size(); i++ )
+//        {
+//            array.remove(list.get( i - 1 ));
+//        }
+        //array.remove(list);
 //        //System.out.println( "lili" + list.get( 0 ) );
 ////        ObservableList<Links> linksSelected, allLinks;
 ////        allLinks = linksTable.getItems();
@@ -146,8 +158,17 @@ public class ManageScreenPanel extends HBox
 ////        linksSelected.forEach( allLinks::remove );
     }
     
+    public void changingName()
+    {
+        nameOfBox.setPromptText( nameOfBox.getText() );
+        nameOfBox.setText(nameOfBox.getText());
+        //nameOfBox.clear();
+        box.setName( nameOfBox.getText() );
+    }
+    
     public void turnToHomePage()
     {
+        LinkPageOfABox.getStage().setScene( LinkPageOfABox.scene );
         System.out.println( "test" );
     }
 
