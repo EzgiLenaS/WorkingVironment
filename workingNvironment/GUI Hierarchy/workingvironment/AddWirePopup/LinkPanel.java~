@@ -1,0 +1,22 @@
+import javafx.scene.layout.VBox;
+import javafx.scene.control.TextField;
+public class LinkPanel extends VBox
+{
+   //properties
+   TextField linkField;
+   String link;
+
+   
+   //constructors
+   public LinkPanel()
+   {
+      super(15);      
+      linkField = new TextField("URL");
+      linkField.setOnAction(e -> link = linkField.getText(););
+      this.getChildren().addAll(new Label("Enter the URL"));
+      
+   }
+   
+   //methods
+      
+}

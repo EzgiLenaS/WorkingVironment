@@ -1,0 +1,89 @@
+package workingNvironment.backEnd;
+
+import java.awt.Desktop;
+import java.io.File;
+
+/**
+ * A class for External applications
+ * @author Yigit Ekin 
+ * @version 1.0 
+ */
+public class AppOpener extends Shortcut 
+{
+   // properties 
+   private String name;
+   private File app;
+   
+   // constructors 
+   public AppOpener( String name, String pathName) 
+   {
+      this.name = name;
+      
+      try
+      {   
+         app = new File( pathName);   
+      } 
+      
+      catch (Exception e) 
+      {
+         e.printStackTrace(); 
+      }
+   }
+   
+   public AppOpener( String name, File app) 
+   {
+      this.name = name;
+      
+      try
+      {   
+         this.app = app; 
+      } 
+      
+      catch (Exception e) 
+      { 
+         e.printStackTrace();
+      }
+   }
+   
+   // methods 
+   /** 
+    * this method return the name of the WebPage  
+    * @param none 
+    * @return name the name of the WebPage 
+    */  
+   public String getName()
+   {
+      return name;
+   }
+   
+   /** 
+    * this method return the file object of the app
+    * @param none 
+    * @return path the path of the app
+    */  
+   public File getApp()
+   {
+      return app;
+   }
+   
+   /** 
+    * this method opens the app on the Desktop
+    * @param none
+    * @return none
+    */  
+   public void run()
+   {  
+      try
+      {   
+         if (java.awt.Desktop.getDesktop().isDesktopSupported())
+         {
+            java.awt.Desktop.getDesktop().open( app);
+         }
+      } 
+      
+      catch (Exception e) 
+      {
+         e.printStackTrace(); 
+      }
+   }
+}

@@ -1,0 +1,52 @@
+package workingNvironment.backEnd;
+
+import java.util.ArrayList;
+import java.io.Serializable;
+
+public class Box implements Serializable
+{
+   //properties
+   private String name;
+   private ArrayList<Shortcut> links;
+   
+   //constructor
+   public Box( String name)
+   {
+      links = new ArrayList<Shortcut>(); 
+      this.name = name;
+   }
+   
+   //methods
+   /*
+    * This method gets the name given to the app by the user 
+    * @param none
+    * @return String name of the app
+    */
+   public String getName()
+   {
+      return name;
+   }
+   
+   /*
+    * This method gets the links of the app added by the user 
+    * @param none
+    * @return ArrayList links that includes the links of the app 
+    */ 
+   public ArrayList getLinks()
+   {
+      return links;
+   }
+   
+   /*
+    * This method open the app using the link given by the user
+    * @param none
+    * @return none 
+    */ 
+   public void openLinks()
+   {
+      for ( int i = 0; i < links.size(); i++)
+      {
+         links.get(i).run(); // runs all the shortcuts by polymorphism
+      }  
+   }
+}
