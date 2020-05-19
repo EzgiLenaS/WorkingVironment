@@ -72,6 +72,12 @@ public class LaunchManageBox extends VBox
 //   public void setOnMouseClicked(EventHandler<MouseEvent> MousEvent.MOUSE_CLICKED)
 //   {}
    
+   // methods 
+   public ManageButton getManageButton()
+   {
+      return this.manageButton;
+   }
+   
    
    private class ActionListener implements EventHandler<MouseEvent>
    {
@@ -93,6 +99,7 @@ public class LaunchManageBox extends VBox
             FileOrLink.display();}
          else if(e.getSource() == manageButton)
          {
+            
          }
          
          

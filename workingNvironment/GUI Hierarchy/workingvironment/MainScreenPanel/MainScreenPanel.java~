@@ -30,12 +30,10 @@ public class MainScreenPanel extends HBox implements EventHandler<MouseEvent>
    //properties
    ListView<LaunchManageBox> list;
    Stage window;
-   public Button button, button2;
+   Button button, button2;
    Box box;
    TextField textField;
    Profile p;
-//   Scene scene3;
-//   ManageScreenPanel layout3;
 
    
    // constructors
@@ -44,7 +42,7 @@ public class MainScreenPanel extends HBox implements EventHandler<MouseEvent>
       super( 20 );
       p = pro;
       button = new Button("Add a new Shortcut");
-      button.setPrefSize(85, 145);
+      button.setPrefSize(85, 45);
       button.setOnMouseClicked(this);
       
       //list of wires
@@ -60,17 +58,11 @@ public class MainScreenPanel extends HBox implements EventHandler<MouseEvent>
         this.getChildren().addAll(list,button);
       
    }
-   
-   public ListView<LaunchManageBox> getList()
-   {
-      return this.list;
-   }
-   
    public void handle(MouseEvent e)
    {
       if(e.getSource() == button)
       {          
-         list.getItems().addAll(new LaunchManageBox("dsadsa" , new Box("lö")));         
+         list.getItems().addAll(new LaunchManageBox("eskik" , new Box("lö")));         
       }
    }
    

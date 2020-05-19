@@ -22,6 +22,7 @@ import javafx.scene.input.MouseEvent;
 import backEnd.*;
 import javafx.stage.FileChooser;
 import javafx.scene.control.TextField;
+import MainScreenPanel.*;
 
 
 public class MainScreen extends     Application 
@@ -32,18 +33,22 @@ public class MainScreen extends     Application
    Stage window;
    Scene scene;
    Scene scene2;
+   Scene scene3;
    Button button, button2;
    Box box;
    TextField textField;
    Profile p;
+   ManageScreenPanel layout3;
+   MainScreenPanel layout;
    
    @Override
    public void start(Stage primaryStage) throws Exception
    {
       window = primaryStage;
       p = new Profile();
-      MainScreenPanel layout = new MainScreenPanel( p );
-      StackPane layout2 = new StackPane();
+      layout = new MainScreenPanel( p );
+      layout3 = new ManageScreenPanel();
+//      StackPane layout2 = new StackPane();
 //      button = new Button("berkan");
 //      button.setPrefSize(85, 45);
       button2 = new Button("berkan2");
@@ -73,10 +78,10 @@ public class MainScreen extends     Application
       //list.getItems().get(0).box.getBox().add(new AppOpener("Berkan" ,fileChooser.showOpenDialog(window) ));
       
 //      layout.getChildren().addAll(list,button);
-      layout2.getChildren().add(button2);
+//      layout2.getChildren().add(button2);
       scene = new Scene(layout,480,270);
-      scene2 = new Scene(layout2 ,500,300);
-      
+//      scene2 = new Scene(layout2 ,500,300);
+      scene3 = new Scene(layout3, 444, 444 );
       
       window.setScene(scene); 
       window.setTitle("WorkingVirement");
@@ -89,14 +94,26 @@ public class MainScreen extends     Application
    {
       if(e.getSource() == button){          
          //window.setScene(scene2);
-         list.getItems().addAll(new LaunchManageBox("eskik" , new Box("lö")));
-         window.setScene(scene2/*lenaScreen*/);
+//         list.getItems().addAll(new LaunchManageBox("weeeqw" , new Box("lö")));
+         window.setScene(scene3/*lenaScreen*/);
          
       }
       if(e.getSource() == button2)
          window.setScene(scene);
       //if(e.getSource() == berkan)
       
+      if( e.getSource() == layout.button )
+      {
+         window.setScene(scene3/*lenaScreen*/);
+      }
+      
+      for ( int i = 0; true; i++)
+      {
+         if ( layout.getList().getItems().get(i).getManageButton() == e.getSource())
+         {
+            window.setScene( scene3);
+         }
+      }
    }
    
    public static void main(String[] args)
