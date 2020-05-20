@@ -3,49 +3,49 @@
   <project autorefresh="false" build="Classes/" main="MainScreen.MainScreen" root="" work="">
     <createjar file=""/>
     <source>
-      <file active="true" name="MainScreen/MainScreen.java" package="MainScreen" timestamp="19-May-2020 21:49:07">
-        <select from="318" to="318"/>
-        <scroll column="0" row="0"/>
-      </file>
-      <file name="MainScreenPanel/MainScreenPanel.java" package="MainScreenPanel" timestamp="19-May-2020 19:39:30">
-        <select from="318" to="318"/>
-        <scroll column="0" row="0"/>
-      </file>
-      <file name="LaunchManageBox/Buttons/ManageButton/ManageButton.java" package="LaunchManageBox.Buttons.ManageButton" timestamp="11-May-2020 16:31:26">
-        <select from="318" to="318"/>
-        <scroll column="0" row="0"/>
-      </file>
-      <file name="LaunchManageBox/Buttons/LaunchButton/LaunchButton.java" package="LaunchManageBox.Buttons.LaunchButton" timestamp="11-May-2020 16:34:12">
-        <select from="318" to="318"/>
-        <scroll column="0" row="0"/>
-      </file>
-      <file name="LaunchManageBox/BoxDiscriptionLabel/BoxDiscriptionLabel.java" package="LaunchManageBox.BoxDiscriptionLabel" timestamp="12-May-2020 08:39:24">
-        <select from="318" to="318"/>
-        <scroll column="0" row="0"/>
-      </file>
-      <file name="AddWirePopup/FileOrLink.java" package="AddWirePopup" timestamp="18-May-2020 12:13:10">
-        <select from="318" to="318"/>
-        <scroll column="0" row="0"/>
+      <file active="true" name="ManageScreenPanel/ManageScreenPanel.java" package="ManageScreenPanel" timestamp="20-May-2020 19:05:31">
+        <select from="542" to="542"/>
+        <scroll column="259" row="0"/>
       </file>
       <file name="MainScreenPanel/popup/ConfirmBox.java" package="popup" timestamp="19-May-2020 13:05:12">
-        <select from="318" to="318"/>
-        <scroll column="0" row="0"/>
+        <select from="542" to="542"/>
+        <scroll column="259" row="0"/>
       </file>
-      <file name="backEnd/Profile.java" package="backEnd" timestamp="19-May-2020 19:22:06">
-        <select from="318" to="318"/>
-        <scroll column="0" row="0"/>
+      <file name="AddWirePopup/FileOrLink.java" package="AddWirePopup" timestamp="20-May-2020 18:59:28">
+        <select from="542" to="542"/>
+        <scroll column="259" row="0"/>
       </file>
-      <file name="LaunchManageBox/ButtonsPane/LaunchManageBox.java" package="LaunchManageBox.ButtonsPane" timestamp="19-May-2020 19:27:12">
-        <select from="318" to="318"/>
-        <scroll column="0" row="0"/>
+      <file name="LaunchManageBox/Buttons/LaunchManageButtons/LaunchManageButtons.java" package="LaunchManageBox.Buttons.LaunchManageButtons" timestamp="20-May-2020 19:01:22">
+        <select from="542" to="542"/>
+        <scroll column="259" row="0"/>
       </file>
-      <file name="LaunchManageBox/Buttons/LaunchManageButtons/LaunchManageButtons.java" package="LaunchManageBox.Buttons.LaunchManageButtons" timestamp="19-May-2020 19:39:32">
-        <select from="318" to="318"/>
-        <scroll column="0" row="0"/>
+      <file name="LaunchManageBox/Buttons/LaunchButton/LaunchButton.java" package="LaunchManageBox.Buttons.LaunchButton" timestamp="20-May-2020 19:01:23">
+        <select from="542" to="542"/>
+        <scroll column="259" row="0"/>
       </file>
-      <file name="ManageScreenPanel/ManageScreenPanel.java" package="ManageScreenPanel" timestamp="19-May-2020 19:39:32">
-        <select from="318" to="318"/>
-        <scroll column="0" row="0"/>
+      <file name="LaunchManageBox/BoxDiscriptionLabel/BoxDiscriptionLabel.java" package="LaunchManageBox.BoxDiscriptionLabel" timestamp="20-May-2020 19:01:23">
+        <select from="542" to="542"/>
+        <scroll column="259" row="0"/>
+      </file>
+      <file name="LaunchManageBox/ButtonsPane/LaunchManageBox.java" package="LaunchManageBox.ButtonsPane" timestamp="20-May-2020 19:03:51">
+        <select from="542" to="542"/>
+        <scroll column="259" row="0"/>
+      </file>
+      <file name="LaunchManageBox/Buttons/ManageButton/ManageButton.java" package="LaunchManageBox.Buttons.ManageButton" timestamp="20-May-2020 19:03:53">
+        <select from="542" to="542"/>
+        <scroll column="259" row="0"/>
+      </file>
+      <file name="MainScreenPanel/MainScreenPanel.java" package="MainScreenPanel" timestamp="20-May-2020 19:14:00">
+        <select from="542" to="542"/>
+        <scroll column="259" row="0"/>
+      </file>
+      <file name="MainScreen/MainScreen.java" package="MainScreen" timestamp="20-May-2020 19:17:38">
+        <select from="542" to="542"/>
+        <scroll column="259" row="0"/>
+      </file>
+      <file name="backEnd/Profile.java" package="backEnd" timestamp="20-May-2020 19:18:06">
+        <select from="542" to="542"/>
+        <scroll column="259" row="0"/>
       </file>
     </source>
     <included/>

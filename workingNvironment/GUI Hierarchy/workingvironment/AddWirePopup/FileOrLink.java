@@ -1,16 +1,14 @@
 package AddWirePopup;
 
-
 import javafx.stage.*;
 import javafx.scene.*;
 import javafx.scene.layout.*;
 import javafx.scene.control.*;
 import javafx.geometry.*;
 import javafx.scene.text.Font;
-public class FileOrLink
-{
 
-   
+public class FileOrLink
+{   
    public static void display()
    {
       

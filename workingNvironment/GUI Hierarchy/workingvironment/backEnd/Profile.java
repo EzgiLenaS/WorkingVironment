@@ -33,10 +33,7 @@ public  class Profile implements Serializable
    
    public void setBoxes( List<Box> list )
    {
-      System.out.println("before"+ boxes);
       this.boxes = new ArrayList<Box>( list);
-//      this.boxes.removeAll( list );
-      System.out.println( "after" + boxes);
    }
    
    

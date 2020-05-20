@@ -14,10 +14,6 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.FileChooser;
-//import workingNvironment.backEnd.AppOpener;
-//import workingNvironment.backEnd.Box;
-//import workingNvironment.backEnd.Shortcut;
-//import workingNvironment.backEnd.WebPageOpener;
 import backEnd.*;
 import MainScreen.*;
 

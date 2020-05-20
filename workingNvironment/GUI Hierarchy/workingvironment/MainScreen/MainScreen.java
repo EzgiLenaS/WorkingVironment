@@ -26,7 +26,10 @@ import LaunchManageBox.Buttons.ManageButton.*;
 import ManageScreenPanel.*;
 import java.io.*;
 
-
+/* Main class to run Workingvironment application
+ * @author Eyüp Berkan Sivrikaya, Sait Can Baþkol and Osman Semih Tiryaki
+ * @version 1.0
+ */ 
 public class MainScreen extends Application 
    implements EventHandler<MouseEvent>
 {
@@ -67,12 +70,7 @@ public class MainScreen extends Application
       }
       layout = new MainScreenPanel( p );
       
-      for(int i = 0; i<layout.getList().getItems().size();i++ ){
-         layout.getList().getItems().get(i).getManageButton().setOnAction(e -> System.out.println("yeahhhh"));}
-
-      
-      button2 = new Button("berkan2");
-      
+      button2 = new Button("berkan2");      
       button2.setOnMouseClicked(this);
       
       scene = new Scene(layout,450,400);
@@ -101,8 +99,7 @@ public class MainScreen extends Application
       return scene;
    }
    public void handle(MouseEvent e)
-   {
-        
+   {     
       for ( int i = 0; true; i++)
       {
          System.out.println(i);
@@ -111,11 +108,9 @@ public class MainScreen extends Application
             System.out.println("mainScreen");
             window.setScene( scene3);
          }
-      }
-      
-      
-      
+      }                  
    }
+   
    @Override
    public void stop()
    {

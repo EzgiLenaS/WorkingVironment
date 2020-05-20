@@ -39,7 +39,7 @@ public class FileOrLink
       addLink.setPrefSize(85, 35);
       
       //initializing pane
-      VBox layout; //= new VBox(15);
+      VBox layout = new VBox(15);
       HBox buttons = new HBox(10);
       buttons.setAlignment(Pos.CENTER);
       layout.setAlignment(Pos.CENTER);

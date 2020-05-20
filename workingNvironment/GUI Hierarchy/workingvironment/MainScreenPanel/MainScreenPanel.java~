@@ -28,6 +28,9 @@ import javafx.geometry.Insets;
 import popup.ConfirmBox;
 import java.util.Arrays;
 
+/*
+ *
+ */ 
 public class MainScreenPanel extends HBox implements EventHandler<MouseEvent>
 {
    //properties
@@ -82,20 +85,12 @@ public class MainScreenPanel extends HBox implements EventHandler<MouseEvent>
    {
       if(e.getSource() == button)
       {
-//         System.out.println( " before add" + p.getBoxes());
          Box box = new Box( "newbx");
          list.getItems().addAll(new LaunchManageBox("New Box"+ (list.getItems().size() + 1) , box));
          p.getBoxes().add( box );
-//         System.out.println( "after" + p.getBoxes());
       }
       if((e.getSource() == deleteButton) &&(ConfirmBox.display("Warning" , "Are you sure?")))
       {
-//         Box[] boxList = new Box[list.getSelectionModel().getSelectedItems().size()];         
-//         System.out.println(list.getSelectionModel().getSelectedItems().toString());                  
-//         for(int i= 0; i < list.getSelectionModel().getSelectedItems().size(); i++ )
-//         {
-//           boxList[i] = list.getSelectionModel().getSelectedItems().get(i).getBox();
-//         }
          list.getItems().removeAll(list.getSelectionModel().getSelectedItems());
          ArrayList<Box> boxList;
          boxList = new ArrayList<Box>();         
