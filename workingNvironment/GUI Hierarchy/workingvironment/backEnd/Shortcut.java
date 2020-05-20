@@ -7,7 +7,7 @@ import java.io.Serializable;
  * @author Yigit Ekin and Arda Eren
  * @version 1.0 
  */
-abstract class Shortcut implements Serializable
+public abstract class Shortcut implements Serializable
 {
    /*
     * abstract method for opening the shortcut object  
@@ -15,4 +15,5 @@ abstract class Shortcut implements Serializable
     * @return none
     */ 
    abstract void run();
+   public abstract String getName();
 } // end of class

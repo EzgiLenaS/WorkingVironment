@@ -26,7 +26,7 @@ public class LaunchManageButtons extends  Button
 //   public void handle(ListView.EditEvent<T> e)
 //   {
 //      //iteration or manage part
-//      System.out.println("iteration or Manage screen");
-//   }
+//      System.out.println("iteration or Manage screen");}
+////   
    
 }

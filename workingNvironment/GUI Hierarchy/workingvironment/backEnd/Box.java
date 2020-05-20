@@ -47,7 +47,7 @@ public class Box implements Serializable
     * @param none
     * @return box the arraylist that includes the shorcut objects 
     */ 
-   public ArrayList getBox()
+   public ArrayList<Shortcut> getBox()
    {
       return box;
    }
