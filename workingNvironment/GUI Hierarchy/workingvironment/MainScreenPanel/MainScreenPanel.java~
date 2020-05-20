@@ -24,16 +24,25 @@ import backEnd.*;
 import javafx.stage.FileChooser;
 import javafx.scene.control.TextField;
 import java.util.ArrayList;
+import javafx.geometry.Insets;
+import popup.ConfirmBox;
+import java.util.Arrays;
 
+/*
+ *
+ */ 
 public class MainScreenPanel extends HBox implements EventHandler<MouseEvent>
 {
    //properties
    ListView<LaunchManageBox> list;
    Stage window;
-   Button button, button2;
+   public Button button, deleteButton;
    Box box;
    TextField textField;
    Profile p;
+   
+//   Scene scene3;
+//   ManageScreenPanel layout3;
 
    
    // constructors
@@ -41,12 +50,20 @@ public class MainScreenPanel extends HBox implements EventHandler<MouseEvent>
    {      
       super( 20 );
       p = pro;
-      button = new Button("Add a new Shortcut");
-      button.setPrefSize(85, 45);
+      button = new Button("Add Box");
+      button.setPrefSize(95, 95);
+      deleteButton = new Button("Delete");
+      deleteButton.setPrefSize(95, 95);
+      VBox vBox = new VBox(25);
+      vBox.setPadding(new Insets(20, 12, 15, 12));
+      vBox.getChildren().addAll(button, deleteButton);
       button.setOnMouseClicked(this);
+      deleteButton.setOnMouseClicked(this);
       
       //list of wires
       list = new ListView<LaunchManageBox>();
+       list.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
+       list.setPrefSize(300,400);
       
       box = new Box("berkan");
       for(int i= 0; i < p.getBoxes().size(); i++ )
@@ -55,14 +72,34 @@ public class MainScreenPanel extends HBox implements EventHandler<MouseEvent>
          list.setPrefSize(280 , 170);                  
       }
                  
-        this.getChildren().addAll(list,button);
+        this.getChildren().addAll(list,vBox);
       
    }
+   
+   public ListView<LaunchManageBox> getList()
+   {
+      return this.list;
+   }
+   
    public void handle(MouseEvent e)
    {
       if(e.getSource() == button)
-      {          
-         list.getItems().addAll(new LaunchManageBox("eskik" , new Box("lö")));         
+      {
+         Box box = new Box( "newbx");
+         list.getItems().addAll(new LaunchManageBox("New Box"+ (list.getItems().size() + 1) , box));
+         p.getBoxes().add( box );
+      }
+      if((e.getSource() == deleteButton) &&(ConfirmBox.display("Warning" , "Are you sure?")))
+      {
+         list.getItems().removeAll(list.getSelectionModel().getSelectedItems());
+         ArrayList<Box> boxList;
+         boxList = new ArrayList<Box>();         
+         for ( int i = 0; i < list.getItems().size(); i++ )
+         {
+            boxList.add( list.getItems().get(i).getBox());
+         }
+         p.setBoxes( boxList );
+            
       }
    }
    

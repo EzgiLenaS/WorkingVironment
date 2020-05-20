@@ -1,54 +1,56 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <drjava version="drjava-20190813-220051">
-  <project autorefresh="false" build="Classes/" root="" work="">
+  <project autorefresh="false" build="Classes/" main="MainScreen.MainScreen" root="" work="">
     <createjar file=""/>
     <source>
-      <file active="true" name="LaunchManageBox/ButtonsPane/LaunchManageBox.java" package="LaunchManageBox.ButtonsPane" timestamp="18-May-2020 23:41:09">
-        <select from="2262" to="2262"/>
-        <scroll column="1219" row="0"/>
+      <file active="true" name="MainScreenPanel/MainScreenPanel.java" package="MainScreenPanel" timestamp="20-May-2020 13:13:30">
+        <select from="1902" to="1902"/>
+        <scroll column="912" row="0"/>
       </file>
-      <file name="LaunchManageBox/Buttons/ManageButton/ManageButton.java" package="LaunchManageBox.Buttons.ManageButton" timestamp="11-May-2020 16:31:25">
-        <select from="2262" to="2262"/>
-        <scroll column="1219" row="0"/>
+      <file name="MainScreen/MainScreen.java" package="MainScreen" timestamp="19-May-2020 21:49:31">
+        <select from="1902" to="1902"/>
+        <scroll column="912" row="0"/>
       </file>
-      <file name="LaunchManageBox/Buttons/LaunchButton/LaunchButton.java" package="LaunchManageBox.Buttons.LaunchButton" timestamp="11-May-2020 16:34:11">
-        <select from="2262" to="2262"/>
-        <scroll column="1219" row="0"/>
+      <file name="LaunchManageBox/Buttons/ManageButton/ManageButton.java" package="LaunchManageBox.Buttons.ManageButton" timestamp="11-May-2020 16:31:26">
+        <select from="1902" to="1902"/>
+        <scroll column="912" row="0"/>
       </file>
-      <file name="LaunchManageBox/BoxDiscriptionLabel/BoxDiscriptionLabel.java" package="LaunchManageBox.BoxDiscriptionLabel" timestamp="12-May-2020 08:39:22">
-        <select from="2262" to="2262"/>
-        <scroll column="1219" row="0"/>
+      <file name="LaunchManageBox/Buttons/LaunchButton/LaunchButton.java" package="LaunchManageBox.Buttons.LaunchButton" timestamp="11-May-2020 16:34:12">
+        <select from="1902" to="1902"/>
+        <scroll column="912" row="0"/>
       </file>
-      <file name="LaunchManageBox/Buttons/LaunchManageButtons/LaunchManageButtons.java" package="LaunchManageBox.Buttons.LaunchManageButtons" timestamp="15-May-2020 22:10:44">
-        <select from="2262" to="2262"/>
-        <scroll column="1219" row="0"/>
+      <file name="LaunchManageBox/BoxDiscriptionLabel/BoxDiscriptionLabel.java" package="LaunchManageBox.BoxDiscriptionLabel" timestamp="12-May-2020 08:39:24">
+        <select from="1902" to="1902"/>
+        <scroll column="912" row="0"/>
       </file>
-      <file name="AddWirePopup/FileOrLink.java" package="AddWirePopup" timestamp="18-May-2020 12:13:08">
-        <select from="2262" to="2262"/>
-        <scroll column="1219" row="0"/>
+      <file name="AddWirePopup/FileOrLink.java" package="AddWirePopup" timestamp="18-May-2020 12:13:10">
+        <select from="1902" to="1902"/>
+        <scroll column="912" row="0"/>
       </file>
-      <file name="MainScreen/Links.java" package="MainScreen" timestamp="18-May-2020 22:35:14">
-        <select from="2262" to="2262"/>
-        <scroll column="1219" row="0"/>
+      <file name="MainScreenPanel/popup/ConfirmBox.java" package="popup" timestamp="19-May-2020 13:05:12">
+        <select from="1902" to="1902"/>
+        <scroll column="912" row="0"/>
       </file>
-      <file name="MainScreen/ManageScreenPanel.java" package="MainScreen" timestamp="18-May-2020 22:52:45">
-        <select from="2262" to="2262"/>
-        <scroll column="1219" row="0"/>
+      <file name="backEnd/Profile.java" package="backEnd" timestamp="19-May-2020 19:22:06">
+        <select from="1902" to="1902"/>
+        <scroll column="912" row="0"/>
       </file>
-      <file name="MainScreen/MainScreen.java" package="MainScreen" timestamp="18-May-2020 23:41:07">
-        <select from="2262" to="2262"/>
-        <scroll column="1219" row="0"/>
+      <file name="LaunchManageBox/ButtonsPane/LaunchManageBox.java" package="LaunchManageBox.ButtonsPane" timestamp="19-May-2020 19:27:12">
+        <select from="1902" to="1902"/>
+        <scroll column="912" row="0"/>
       </file>
-      <file name="MainScreenPanel/MainScreenPanel.java" package="MainScreenPanel" timestamp="18-May-2020 23:41:09">
-        <select from="2262" to="2262"/>
-        <scroll column="1219" row="0"/>
+      <file name="LaunchManageBox/Buttons/LaunchManageButtons/LaunchManageButtons.java" package="LaunchManageBox.Buttons.LaunchManageButtons" timestamp="19-May-2020 19:39:32">
+        <select from="1902" to="1902"/>
+        <scroll column="912" row="0"/>
+      </file>
+      <file name="ManageScreenPanel/ManageScreenPanel.java" package="ManageScreenPanel" timestamp="19-May-2020 19:39:32">
+        <select from="1902" to="1902"/>
+        <scroll column="912" row="0"/>
       </file>
     </source>
     <included/>
     <excluded/>
-    <collapsed>
-      <path name="./[ Source Files ]/LaunchManageBox/Buttons/ManageButton/"/>
-    </collapsed>
+    <collapsed/>
     <classpath/>
     <breakpoints/>
     <watches/>

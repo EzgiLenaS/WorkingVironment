@@ -22,81 +22,90 @@ import javafx.scene.input.MouseEvent;
 import backEnd.*;
 import javafx.stage.FileChooser;
 import javafx.scene.control.TextField;
+import MainScreenPanel.*;
+import LaunchManageBox.Buttons.ManageButton.*;
+import ManageScreenPanel.*;
 
 
-public class MainScreen extends     Application 
-   implements  EventHandler<MouseEvent>
+public class MainScreen extends Application 
+                        implements EventHandler<MouseEvent>
 {
    //properties
    ListView<LaunchManageBox > list;
-   Stage window;
-   Scene scene;
-   Scene scene2;
+   static Stage window;
+   static Scene scene;
+   public static Scene  scene3;
    Button button, button2;
    Box box;
    TextField textField;
    Profile p;
+   ManageScreenPanel layout3;
+   MainScreenPanel layout;
    
    @Override
    public void start(Stage primaryStage) throws Exception
    {
       window = primaryStage;
       p = new Profile();
-      MainScreenPanel layout = new MainScreenPanel( p );
-      StackPane layout2 = new StackPane();
-//      button = new Button("berkan");
-//      button.setPrefSize(85, 45);
-      button2 = new Button("berkan2");
-//      button.setPrefSize(85, 45);
-//      button.setOnMouseClicked(this);
-      button2.setOnMouseClicked(this);
-//      
-//      //list of wires
-//      list = new ListView<LaunchManageBox>();
-////      list.setEditable(true);
-////      list.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
-////      System.out.println(list.getSelectionModel().getSelectedIndices());
-////      
+      layout = new MainScreenPanel( p );
+      
+      for(int i = 0; i<layout.getList().getItems().size();i++ ){
+         layout.getList().getItems().get(i).getManageButton().setOnAction(e -> System.out.println("yeahhhh"));}
+//      layout3 = new ManageScreenPanel( box );
 
-//      FileChooser fileChooser = new FileChooser();
-//      box = new Box("berkan");
-//      box.getBox().add(new AppOpener("berkan" ,fileChooser.showOpenDialog(window)));
-//      for(int i= 0; i < 3; i++)
-//      {
-//         list.getItems().addAll(new LaunchManageBox("Berkan" , box  ));
-//         list.setPrefSize(280 , 170);
-//         
-//         
-//      }
-      
-      //list.getItems().addAll(new LaunchManageBox("Berkan" , Box("Berkan")));
-      //list.getItems().get(0).box.getBox().add(new AppOpener("Berkan" ,fileChooser.showOpenDialog(window) ));
-      
-//      layout.getChildren().addAll(list,button);
-      layout2.getChildren().add(button2);
-      scene = new Scene(layout,480,270);
-      scene2 = new Scene(layout2 ,500,300);
-      
+      button2 = new Button("berkan2");
+
+      button2.setOnMouseClicked(this);
+
+      scene = new Scene(layout,450,400);
+//      scene3 = new Scene(layout3, 444, 444 );
       
       window.setScene(scene); 
+      window.setResizable(false);
       window.setTitle("WorkingVirement");
       window.getIcons().add(new Image("/icons/output-onlinejpgtools.png"));
       
       window.show();
       
    }
+   
+   public static Stage getWindow()
+   {
+      return window;
+   }
+   
+   public static Scene getScene3()
+   {
+      return scene3;
+   }
+   
+   public static Scene getScene()
+   {
+      return scene;
+   }
    public void handle(MouseEvent e)
    {
-      if(e.getSource() == button){          
-         //window.setScene(scene2);
-         list.getItems().addAll(new LaunchManageBox("eskik" , new Box("lö")));
-         window.setScene(scene2/*lenaScreen*/);
-         
-      }
-      if(e.getSource() == button2)
-         window.setScene(scene);
-      //if(e.getSource() == berkan)
+//      if(e.getSource() == button){          
+//         //window.setScene(scene2);
+////         list.getItems().addAll(new LaunchManageBox("weeeqw" , new Box("lö")));
+//         window.setScene(scene3/*lenaScreen*/);
+//         
+//      }
+//      if(e.getSource() == button2)
+//         window.setScene(scene);
+//      //if(e.getSource() == berkan)
+       System.out.println("i");
       
+      
+      for ( int i = 0; true; i++)
+      {
+         System.out.println(i);
+         if ( layout.getList().getItems().get(i).getManageButton() == (ManageButton)e.getSource())
+         {
+            System.out.println("mainScreen");
+            window.setScene( scene3);
+         }
+      }
    }
    
    public static void main(String[] args)

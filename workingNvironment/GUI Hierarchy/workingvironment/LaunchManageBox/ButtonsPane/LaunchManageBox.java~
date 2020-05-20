@@ -17,6 +17,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Window;
 import backEnd.*;
 import AddWirePopup.*; 
+import MainScreen.*;
 
 public class LaunchManageBox extends VBox
    
@@ -25,7 +26,7 @@ public class LaunchManageBox extends VBox
    //properties
    private LaunchButton launchButton;
    private ManageButton manageButton;
-   Box box;
+   private Box box;
    
    
    
@@ -38,6 +39,7 @@ public class LaunchManageBox extends VBox
       launchButton = new LaunchButton();
       launchButton.addEventHandler( MouseEvent.MOUSE_CLICKED ,new ActionListener());
       manageButton = new ManageButton();
+      manageButton.addEventHandler( MouseEvent.MOUSE_CLICKED ,new ActionListener());
       this.setPadding(new Insets(15, 12, 15, 12));
       // this.setPadding(new Insets(20, 20, 200, 20));
       
@@ -72,6 +74,17 @@ public class LaunchManageBox extends VBox
 //   public void setOnMouseClicked(EventHandler<MouseEvent> MousEvent.MOUSE_CLICKED)
 //   {}
    
+   // methods 
+   public ManageButton getManageButton()
+   {
+      return this.manageButton;
+   }
+   
+   public Box getBox()
+   {
+      return this.box;
+   }
+   
    
    private class ActionListener implements EventHandler<MouseEvent>
    {
@@ -83,16 +96,23 @@ public class LaunchManageBox extends VBox
       {
          if(e.getSource() == launchButton)
          {
-            box.getBox().add(new WebPageOpener("berkan" , "https://www.youtube.com/"));
-            FileChooser fileChooser = new FileChooser();
-            
-            box.getBox().add(new WebPageOpener("berkan2" , "https://github.com/buckyroberts/Source-Code-from-Tutorials/blob/master/JavaFX/005_creatingAlertBoxes/AlertBox.java"));
-            //box.getBox().add(new AppOpener("berkan" ,fileChooser.showOpenDialog(window) ));
+//            box.getBox().add(new WebPageOpener("berkan" , "https://www.youtube.com/"));
+//            FileChooser fileChooser = new FileChooser();
+//            
+//            box.getBox().add(new WebPageOpener("berkan2" , "https://github.com/buckyroberts/Source-Code-from-Tutorials/blob/master/JavaFX/005_creatingAlertBoxes/AlertBox.java"));
+//            //box.getBox().add(new AppOpener("berkan" ,fileChooser.showOpenDialog(window) ));
             box.runAll();
-            System.out.println("Berkan Reis");
-            FileOrLink.display();}
+//            System.out.println("Berkan Reis");
+//            FileOrLink.display();
+         }
          else if(e.getSource() == manageButton)
          {
+            try{
+            MainScreen.getWindow().setScene(new Scene(new ManageScreenPanel()));
+            }
+            catch(Exception ex){
+               System.out.println(ex);
+            }
          }
          
          
