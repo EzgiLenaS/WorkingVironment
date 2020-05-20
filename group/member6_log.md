@@ -46,3 +46,12 @@ We split the work a little bit
 I wrote the code for MainScreenPanel class 
 But when we split buttons from main class it became harder to change scenes from other classes
 Eventually I managed to do it then we started to do managebutton and changed the scene to managescreen panel 
+
+### ~ 19.05.2020 ~
+We were in Zoom all day with Berkan, Sait and Ezgi and tried to finish the job
+Me and Berkan write the code for launch and manage buttons
+I added addbox button and helped Berkan to make delete button working
+Then Mert came and five of us tried to link their page and added buttons for transitions
+We combined 2 GUI parts and made everything working but reading the neccessary information from a text file
+After that I attended the final Zoom meeting    
+ 
