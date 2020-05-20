@@ -29,8 +29,7 @@ import popup.ConfirmBox;
 import java.util.Arrays;
 
 /*
- * @author Osman Semih Tiryaki
- * @version 1.0
+ *
  */ 
 public class MainScreenPanel extends HBox implements EventHandler<MouseEvent>
 {
@@ -41,7 +40,11 @@ public class MainScreenPanel extends HBox implements EventHandler<MouseEvent>
    Box box;
    TextField textField;
    Profile p;
-      
+   
+//   Scene scene3;
+//   ManageScreenPanel layout3;
+
+   
    // constructors
    public MainScreenPanel( Profile pro )
    {      
@@ -59,9 +62,10 @@ public class MainScreenPanel extends HBox implements EventHandler<MouseEvent>
       
       //list of wires
       list = new ListView<LaunchManageBox>();
-      list.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
-      list.setPrefSize(300,400);
+       list.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
+       list.setPrefSize(300,400);
       
+      box = new Box("berkan");
       for(int i= 0; i < p.getBoxes().size(); i++ )
       {
          list.getItems().addAll(new LaunchManageBox(( p.getBoxes().get(i)).getName() , p.getBoxes().get(i) ));
