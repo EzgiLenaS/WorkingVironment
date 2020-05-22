@@ -30,7 +30,9 @@ Methods of the box panels has created.
 FXML/Scene builder codes created.
 Linkedview created.
 ### ~ 7.05.2020- 18.05.2020 ~
-Zoomed with Berkan and Osman created panels and buttons, our file or url panel is working fine, we entegrated it however we have still difficulties with setting scenes. Now we handled setting scenes with getter scene methods now we are customizing scenes and boxes for individual boxes.
+Zoomed with Berkan and Osman created panels and buttons, our file or url panel is working fine, we entegrated it however we have still difficulties with setting scenes. Now we handled setting scenes with getter scene methods now we are customizing scenes and boxes for individual boxes. We implemented serializable interface, managed to fix manage boxes, setting and swapping scenes from different classes with getter methods and static variables.
+
+
 
 
 
