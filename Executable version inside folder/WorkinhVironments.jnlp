@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="WorkinhVironments.jnlp">
+  <information>
+    <title>WorkinhVironments</title>
+    <vendor>EZGÝ LENA SÖNMEZ</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="WorkinhVironments.jar" size="616973" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="WorkinhVironments" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="MainScreen.MainScreen"  name="WorkinhVironments" />
+  <update check="always"/>
+</jnlp>
