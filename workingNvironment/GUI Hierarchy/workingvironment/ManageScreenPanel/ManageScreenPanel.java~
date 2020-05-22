@@ -14,15 +14,17 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.FileChooser;
+//import workingNvironment.backEnd.AppOpener;
+//import workingNvironment.backEnd.Box;
+//import workingNvironment.backEnd.Shortcut;
+//import workingNvironment.backEnd.WebPageOpener;
 import backEnd.*;
 import MainScreen.*;
 
-/**This class will show the Link Page to users. 
- * In this page they can add their websites and put a name for each
- * also they can add applications from their computers
+/**
  *
- * @author Mert Tereci & Ezgi Lena S�nmez 
- * @version 3.0
+ * @author Mert Tereci and Ezgi Lena Sönmez 
+ * @version 2.0
  */
 public class ManageScreenPanel extends HBox 
 {
@@ -32,8 +34,8 @@ public class ManageScreenPanel extends HBox
     TableColumn<Shortcut, String> linksColumn;// this provides to show the websites and app's names in the table for user
     TextField nameOfLink;// user enters the name of the website link
     TextField urlOfLink;// user enters the url of the website
-    TextField nameOfApp;//user enters the name of the app
-    TextField nameOfBox;// user can change the name of the created box
+    TextField nameOfApp;// ??????????????????????????????????????????????
+    TextField nameOfBox;
     
     Box box;// is a property for calling the arraylist<shortcut>
     
@@ -47,6 +49,7 @@ public class ManageScreenPanel extends HBox
         //Links name column
         linksColumn = new TableColumn<>("links");//name of column
         linksColumn.setMinWidth(300);
+        //?????????????????????????????????????????????????????????????**bu cellvaluenun aldığı getname hangisi?
         linksColumn.setCellValueFactory( new PropertyValueFactory<>("name") );//this takes the getName for websites and apps
     
         //Name input
@@ -61,7 +64,7 @@ public class ManageScreenPanel extends HBox
         
         //nameOfApp
         nameOfApp = new TextField();
-        nameOfApp.setPromptText( "App Name" );//back word to show where is for entering the name of the app 
+        nameOfApp.setPromptText( "App Name" );//????????????????????????????????is that necessary?
         nameOfApp.setMinWidth(100);
         
         //nameOfBox
@@ -71,19 +74,19 @@ public class ManageScreenPanel extends HBox
       
         //Back button and its method
         Button backButton = new Button( "Back" );
-        backButton.setOnAction( e -> turnToHomePage() );//calls the turnToHomePage method
+        backButton.setOnAction( e -> turnToHomePage() );
         
         //add Button and its method
         Button addButtonWeb = new Button( "AddWeb" );
-        addButtonWeb.setOnAction( e -> addButtonWebClicked() );//calls the addButtonWebClicked method
+        addButtonWeb.setOnAction( e -> addButtonWebClicked() );
         
         //add Button and its method
         Button addButtonApp = new Button( "AddApp" );
-        addButtonApp.setOnAction( e -> addButtonAppClicked() );//calls the addButtonAppClicked method
+        addButtonApp.setOnAction( e -> addButtonAppClicked() );
         
         //delete Button and its method
         Button deleteButton = new Button( "Delete" );
-        deleteButton.setOnAction( e -> deleteButtonClicked() );//calls the deleteButtonClicked method
+        deleteButton.setOnAction( e -> deleteButtonClicked() );
 
         //Right side of the page
         VBox rightSide = new VBox();
@@ -114,28 +117,18 @@ public class ManageScreenPanel extends HBox
         this.getChildren().addAll( allLinkPage );
     }
     
-    //add Button Clicked for web
-    /**
-     * This method provides to user to add the website url with its name 
-     */
+    //add Button Clicked for web 
     public void addButtonWebClicked()
     {
-        //variables
         WebPageOpener open = new WebPageOpener( nameOfLink.getText(), urlOfLink.getText() );
-        //adds the webPageOpener object in to the array
         array.add( open );
-        //with this, we can update the table view
+        
         linksTable.setItems( getLinks() );
-        //these clean the field when the user finish her/his job
+        
         nameOfLink.clear();
         urlOfLink.clear();
     }
     
-    /**
-     * This method provides entering the name of the computer app to the tableview
-     * and also when they click this method their documents will open and they can select 
-     * what they want 
-     */
     public void addButtonAppClicked()
     {
         FileChooser fileChooser = new FileChooser();  
@@ -148,13 +141,6 @@ public class ManageScreenPanel extends HBox
     }
     
     //delete Button Clicked
-    /**
-     * this method provides user to delete the links both from array 
-     * and also remove from tableview
-     * If they keep presses the ctr(control) button they can do multiple selection
-     * and after they select what they want 
-     * when they clicked this button the object will be removed
-     */
     public void deleteButtonClicked()
     {
         linksTable.getSelectionModel().setSelectionMode( SelectionMode.MULTIPLE );
@@ -163,41 +149,27 @@ public class ManageScreenPanel extends HBox
         linksTable.getItems().removeAll( list );
     }
     
-    /**
-     * With this method user can change their boxes ,which keep the whole links in it, name.
-     * the name is taken from the textfield nameOfBox
-     */
     public void changingName()
     {
         nameOfBox.setPromptText( nameOfBox.getText() );
         nameOfBox.setText(nameOfBox.getText());
+        //nameOfBox.clear();
         box.setName( nameOfBox.getText() );
     }
     
-    /**
-     * with this method and after clicking the "back button" user can see the main screen panel
-     */
     public void turnToHomePage()
     {
         MainScreen.getWindow().setScene( MainScreen.getScene() );
+        System.out.println( "test" );
     }
 
     //get all of the links
-    /**
-     * Thanks to this method, we can thake the entered old links from Box class
-     * because we equalize array( arrayList ) with Box box 
-     * and here we fill the Observablelist links with this array
-     * after filling the links list with links 
-     * we return the links list to use it in the table view 
-     * with this method: linksTable.setItems( getLinks() );
-     * @return links list to use it for showing the names of the links in the gui
-     */
     public ObservableList<Shortcut> getLinks()
     {
         ObservableList<Shortcut> links = FXCollections.observableArrayList();
         for( int i = 0; i < array.size(); i++ )
         {
-            links.add( array.get( i ) );
+            links.add( array.get( i ) );//Casting?
         }
         return links;
     }

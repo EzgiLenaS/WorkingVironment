@@ -3,8 +3,7 @@ import javafx.event.*;
 import LaunchManageBox.Buttons.LaunchManageButtons.LaunchManageButtons;
 
 public class ManageButton extends LaunchManageButtons
-{
-   
+{   
    //constructor
    public ManageButton()
    {
@@ -14,7 +13,6 @@ public class ManageButton extends LaunchManageButtons
    //methods
    public void handle(ActionEvent e)
    {
-      //iteration or manage part
       System.out.println("Manage screen");
    }
    

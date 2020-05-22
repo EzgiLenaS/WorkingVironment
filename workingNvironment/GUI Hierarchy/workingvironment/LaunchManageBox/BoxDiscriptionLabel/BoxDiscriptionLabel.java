@@ -1,7 +1,7 @@
 package LaunchManageBox.BoxDiscriptionLabel;
 import javafx.scene.control.Label;
    
-   
+
 public class BoxDiscriptionLabel extends Label
 {
    //properties

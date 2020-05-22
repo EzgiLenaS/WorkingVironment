@@ -2,13 +2,14 @@ package backEnd;
 
 import java.util.ArrayList;
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * A class for Profile object  
  * @author Yigit Ekin and Arda Eren
  * @version 1.0 
  */
-public class Profile implements Serializable
+public  class Profile implements Serializable
 {
    //properties
    private ArrayList<Box> boxes;
@@ -26,7 +27,14 @@ public class Profile implements Serializable
     * @return boxes the arraylist that includes the collection of boxes
     */ 
    public ArrayList<Box> getBoxes()
-   {
+   {   
       return boxes;
    }
+   
+   public void setBoxes( List<Box> list )
+   {
+      this.boxes = new ArrayList<Box>( list);
+   }
+   
+   
 } // end of class

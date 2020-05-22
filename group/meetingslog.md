@@ -50,3 +50,20 @@ Second part, arrangement of boxes and adding links and apps will be done by Lena
 Next Meeting: TBD
 ****
 ****
+
+****
+### Meeting ~ (07.05.2020, 2 hours)
+****
+
+**Present:** Everyone  _**Absent:**_  None
+
+**Discussion:**
+
+We showed what we have done to each other
+We tested our program a little bit
+Then we added a function to read profile information in order not to lose the data in every restart
+We used serializable interface to read file 
+We also managed to make our application an executable jar file.
+Next Meeting: TBD
+****
+****

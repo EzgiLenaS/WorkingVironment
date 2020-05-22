@@ -10,6 +10,7 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.Scene;
 import javafx.scene.layout.HBox;
 import javafx.scene.control.Cell;
+import LaunchManageBox.Buttons.LaunchManageButtons.LaunchManageButtons;
 
 
 
@@ -17,12 +18,12 @@ import javafx.scene.control.Cell;
 public class LaunchButton extends LaunchManageButtons
 {
    //properties
-   Box box;
+   //Box box;
    //constructor
    public LaunchButton()
    {
       super("Launch ");
-      box = new Box();
+      //box = new Box();
    }
    
    
@@ -33,7 +34,7 @@ public class LaunchButton extends LaunchManageButtons
       System.out.println("iteration");
       //Profile.get(getInt()).runAll();
        //JavafxAppTry.list.setEditable(true);
-      box.runAll();
+      //box.runAll();
      
 
    }

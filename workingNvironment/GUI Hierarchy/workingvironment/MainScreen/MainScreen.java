@@ -8,8 +8,7 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.scene.Scene;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.*;
 import javafx.scene.image.Image;
 import javafx.collections.*;
 import javafx.scene.control.cell.TextFieldListCell;
@@ -23,17 +22,22 @@ import backEnd.*;
 import javafx.stage.FileChooser;
 import javafx.scene.control.TextField;
 import MainScreenPanel.*;
+import LaunchManageBox.Buttons.ManageButton.*;
+import ManageScreenPanel.*;
+import java.io.*;
 
-
-public class MainScreen extends     Application 
-   implements  EventHandler<MouseEvent>
+/* Main class to run Workingvironment application
+ * @author Eyüp Berkan Sivrikaya, Sait Can Baþkol and Osman Semih Tiryaki
+ * @version 1.0
+ */ 
+public class MainScreen extends Application 
+   implements EventHandler<MouseEvent>
 {
    //properties
    ListView<LaunchManageBox > list;
-   Stage window;
-   Scene scene;
-   Scene scene2;
-   Scene scene3;
+   static Stage window;
+   static Scene scene;
+   public static Scene  scene3;
    Button button, button2;
    Box box;
    TextField textField;
@@ -46,74 +50,86 @@ public class MainScreen extends     Application
    {
       window = primaryStage;
       p = new Profile();
+      //loading p from file
+      try
+      {     
+         // Reading the object from a file 
+         FileInputStream file = new FileInputStream("DO NOT DELETE!!"); 
+         ObjectInputStream in = new ObjectInputStream(file); 
+         
+         // Method for deserialization of object 
+         p = (Profile)in.readObject(); 
+         
+         in.close(); 
+         file.close(); 
+      } 
+      
+      catch(IOException ex) 
+      { 
+         p = new Profile();
+      }
       layout = new MainScreenPanel( p );
-      layout3 = new ManageScreenPanel();
-//      StackPane layout2 = new StackPane();
-//      button = new Button("berkan");
-//      button.setPrefSize(85, 45);
-      button2 = new Button("berkan2");
-//      button.setPrefSize(85, 45);
-//      button.setOnMouseClicked(this);
+      
+      button2 = new Button("berkan2");      
       button2.setOnMouseClicked(this);
-//      
-//      //list of wires
-//      list = new ListView<LaunchManageBox>();
-////      list.setEditable(true);
-////      list.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
-////      System.out.println(list.getSelectionModel().getSelectedIndices());
-////      
-
-//      FileChooser fileChooser = new FileChooser();
-//      box = new Box("berkan");
-//      box.getBox().add(new AppOpener("berkan" ,fileChooser.showOpenDialog(window)));
-//      for(int i= 0; i < 3; i++)
-//      {
-//         list.getItems().addAll(new LaunchManageBox("Berkan" , box  ));
-//         list.setPrefSize(280 , 170);
-//         
-//         
-//      }
       
-      //list.getItems().addAll(new LaunchManageBox("Berkan" , Box("Berkan")));
-      //list.getItems().get(0).box.getBox().add(new AppOpener("Berkan" ,fileChooser.showOpenDialog(window) ));
-      
-//      layout.getChildren().addAll(list,button);
-//      layout2.getChildren().add(button2);
-      scene = new Scene(layout,480,270);
-//      scene2 = new Scene(layout2 ,500,300);
-      scene3 = new Scene(layout3, 444, 444 );
+      scene = new Scene(layout,450,400);
       
       window.setScene(scene); 
+      window.setResizable(false);
       window.setTitle("WorkingVirement");
       window.getIcons().add(new Image("/icons/output-onlinejpgtools.png"));
       
       window.show();
       
    }
-   public void handle(MouseEvent e)
+   
+   public static Stage getWindow()
    {
-      if(e.getSource() == button){          
-         //window.setScene(scene2);
-//         list.getItems().addAll(new LaunchManageBox("weeeqw" , new Box("lö")));
-         window.setScene(scene3/*lenaScreen*/);
-         
-      }
-      if(e.getSource() == button2)
-         window.setScene(scene);
-      //if(e.getSource() == berkan)
-      
-      if( e.getSource() == layout.button )
-      {
-         window.setScene(scene3/*lenaScreen*/);
-      }
-      
+      return window;
+   }
+   
+   public static Scene getScene3()
+   {
+      return scene3;
+   }
+   
+   public static Scene getScene()
+   {
+      return scene;
+   }
+   public void handle(MouseEvent e)
+   {     
       for ( int i = 0; true; i++)
       {
-         if ( layout.getList().getItems().get(i).getManageButton() == e.getSource())
+         System.out.println(i);
+         if ( layout.getList().getItems().get(i).getManageButton() == (ManageButton)e.getSource())
          {
+            System.out.println("mainScreen");
             window.setScene( scene3);
          }
+      }                  
+   }
+   
+   @Override
+   public void stop()
+   {
+      try
+      {     
+         FileOutputStream file = new FileOutputStream("DO NOT DELETE!!"); 
+         ObjectOutputStream out = new ObjectOutputStream(file); 
+         
+         // Method for serialization of object 
+         out.writeObject(p); 
+         
+         out.close(); 
+         file.close();      
       }
+      catch(Exception e)
+      {
+         e.printStackTrace();
+      }
+      
    }
    
    public static void main(String[] args)

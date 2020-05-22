@@ -17,18 +17,22 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Window;
 import backEnd.*;
 import AddWirePopup.*; 
+import MainScreen.*;
+import ManageScreenPanel.*;
 
+/*
+ * GUI version of a Box
+ * @author Eyüp Berkan Sivrikaya, Sait Can Baþkol and Osman Semih Tiryaki
+ * @version 1.0
+ */ 
 public class LaunchManageBox extends VBox
    
-{
-   
+{   
    //properties
    private LaunchButton launchButton;
    private ManageButton manageButton;
-   Box box;
-   
-   
-   
+   private Box box;
+      
    //constructors
    public LaunchManageBox(String boxName, Box newBox)
    {
@@ -38,8 +42,8 @@ public class LaunchManageBox extends VBox
       launchButton = new LaunchButton();
       launchButton.addEventHandler( MouseEvent.MOUSE_CLICKED ,new ActionListener());
       manageButton = new ManageButton();
+      manageButton.addEventHandler( MouseEvent.MOUSE_CLICKED ,new ActionListener());
       this.setPadding(new Insets(15, 12, 15, 12));
-      // this.setPadding(new Insets(20, 20, 200, 20));
       
       this.setSpacing(10);
       
@@ -48,34 +52,16 @@ public class LaunchManageBox extends VBox
       this.addEventHandler(MouseEvent.MOUSE_CLICKED, new ActionListener());
       this.setOnMouseClicked(new ActionListener());
    }
-   
-   
-//   public HBox addHBox() {
-//      HBox hbox = new HBox();
-//      hbox.setPadding(new Insets(15, 12, 15, 12));
-//      hbox.setSpacing(10);
-//      hbox.setStyle("-fx-background-color: #336699;");
-//      
-//      Button buttonCurrent = new Button("Current");
-//      buttonCurrent.setPrefSize(100, 20);
-//      
-//      Button buttonProjected = new Button("Projected");
-//      buttonProjected.setPrefSize(100, 20);
-//      hbox.getChildren().addAll(buttonCurrent, buttonProjected);
-//      
-//      return hbox;
-//   }
-   
-   
-   
-//   
-//   public void setOnMouseClicked(EventHandler<MouseEvent> MousEvent.MOUSE_CLICKED)
-//   {}
-   
+         
    // methods 
    public ManageButton getManageButton()
    {
       return this.manageButton;
+   }
+   
+   public Box getBox()
+   {
+      return this.box;
    }
    
    
@@ -89,17 +75,16 @@ public class LaunchManageBox extends VBox
       {
          if(e.getSource() == launchButton)
          {
-            box.getBox().add(new WebPageOpener("berkan" , "https://www.youtube.com/"));
-            FileChooser fileChooser = new FileChooser();
-            
-            box.getBox().add(new WebPageOpener("berkan2" , "https://github.com/buckyroberts/Source-Code-from-Tutorials/blob/master/JavaFX/005_creatingAlertBoxes/AlertBox.java"));
-            //box.getBox().add(new AppOpener("berkan" ,fileChooser.showOpenDialog(window) ));
             box.runAll();
-            System.out.println("Berkan Reis");
-            FileOrLink.display();}
+         }
          else if(e.getSource() == manageButton)
          {
-            
+            try{
+            MainScreen.getWindow().setScene(new Scene(new ManageScreenPanel( box )));
+            }
+            catch(Exception ex){
+               System.out.println(ex);
+            }
          }
          
          
