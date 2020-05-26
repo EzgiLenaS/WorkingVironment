@@ -54,4 +54,8 @@ I added addbox button and helped Berkan to make delete button working
 Then Mert came and five of us tried to link their page and added buttons for transitions
 We combined 2 GUI parts and made everything working but reading the neccessary information from a text file
 After that I attended the final Zoom meeting    
- 
+
+### ~ 20.05.2020 ~
+I attended the meeting for our video
+Added some comments to the classes I wrote
+And deleted some unnecessary parts

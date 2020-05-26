@@ -52,7 +52,7 @@ Next Meeting: TBD
 ****
 
 ****
-### Meeting ~ (07.05.2020, 2 hours)
+### Meeting ~ (19.05.2020, 2 hours)
 ****
 
 **Present:** Everyone  _**Absent:**_  None
@@ -67,3 +67,18 @@ We also managed to make our application an executable jar file.
 Next Meeting: TBD
 ****
 ****
+
+****
+### Meeting ~ (20.05.2020, 1 hours)
+****
+
+**Present:** Everyone  _**Absent:**_  None
+
+**Discussion:**
+
+We recorded our project demo video
+Next Meeting: TBD
+****
+****
+
+
