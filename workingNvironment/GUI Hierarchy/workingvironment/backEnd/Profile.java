@@ -30,13 +30,15 @@ public  class Profile implements Serializable
    {   
       return boxes;
    }
-   
+    
+   /*
+    * This method sets the boxes property of profile to the demanded list
+    * @param List<Box> list is the demanded list
+    * @return none
+    */ 
    public void setBoxes( List<Box> list )
    {
-      System.out.println("before"+ boxes);
       this.boxes = new ArrayList<Box>( list);
-//      this.boxes.removeAll( list );
-      System.out.println( "after" + boxes);
    }
    
    
