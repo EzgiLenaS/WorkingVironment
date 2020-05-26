@@ -28,10 +28,9 @@ import java.io.*;
 
 
 public class MainScreen extends Application 
-   implements EventHandler<MouseEvent>
+
 {
    //properties
-   ListView<LaunchManageBox > list;
    static Stage window;
    static Scene scene;
    public static Scene  scene3;
@@ -66,14 +65,7 @@ public class MainScreen extends Application
          p = new Profile();
       }
       layout = new MainScreenPanel( p );
-      
-      for(int i = 0; i<layout.getList().getItems().size();i++ ){
-         layout.getList().getItems().get(i).getManageButton().setOnAction(e -> System.out.println("yeahhhh"));}
 
-      
-      button2 = new Button("berkan2");
-      
-      button2.setOnMouseClicked(this);
       
       scene = new Scene(layout,450,400);
       
@@ -100,22 +92,7 @@ public class MainScreen extends Application
    {
       return scene;
    }
-   public void handle(MouseEvent e)
-   {
-        
-      for ( int i = 0; true; i++)
-      {
-         System.out.println(i);
-         if ( layout.getList().getItems().get(i).getManageButton() == (ManageButton)e.getSource())
-         {
-            System.out.println("mainScreen");
-            window.setScene( scene3);
-         }
-      }
-      
-      
-      
-   }
+
    @Override
    public void stop()
    {

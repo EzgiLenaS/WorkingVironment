@@ -9,24 +9,13 @@ import javafx.event.*;
  */
 
 public class LaunchManageButtons extends  Button 
-                                //implements  EventHandler<ListView.EditEvent<T>>
-{
-   //preoperties
-   
+{  
    //constructors
    public LaunchManageButtons(String name)
    {
       super(name);
-     // this.setOnAction(this);
       this.setPrefSize(85, 25);
       
    }
-   //methods
-//   
-//   public void handle(ListView.EditEvent<T> e)
-//   {
-//      //iteration or manage part
-//      System.out.println("iteration or Manage screen");}
-////   
    
 }

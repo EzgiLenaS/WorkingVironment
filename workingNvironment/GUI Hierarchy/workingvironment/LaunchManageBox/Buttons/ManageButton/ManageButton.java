@@ -10,13 +10,5 @@ public class ManageButton extends LaunchManageButtons
    {
       super("Manage ");
    }
-   
-   //methods
-   public void handle(ActionEvent e)
-   {
-      //iteration or manage part
-      System.out.println("Manage screen");
-   }
-   
+  
 }
-

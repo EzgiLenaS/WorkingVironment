@@ -1,9 +1,5 @@
-/*taken from
-https://github.com/buckyroberts/Source-Code-from-Tutorials/blob/master/JavaFX/006_communicatingBetweenWindows/ConfirmBox.java
-https://www.youtube.com/user/thenewboston
-Great youtube channel with lots of content for teaching programming
-*/
-
+//taken from
+//https://github.com/buckyroberts/Source-Code-from-Tutorials/blob/master/JavaFX/006_communicatingBetweenWindows/ConfirmBox.java
 package popup;
 import javafx.stage.*;
 import javafx.scene.*;

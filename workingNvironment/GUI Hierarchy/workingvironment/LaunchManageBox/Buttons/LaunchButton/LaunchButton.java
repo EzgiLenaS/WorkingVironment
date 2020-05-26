@@ -17,28 +17,8 @@ import LaunchManageBox.Buttons.LaunchManageButtons.LaunchManageButtons;
 
 public class LaunchButton extends LaunchManageButtons
 {
-   //properties
-   //Box box;
-   //constructor
    public LaunchButton()
    {
       super("Launch ");
-      //box = new Box();
-   }
-   
-   
-   //methods
-    public void handle(ActionEvent e)
-   {
-      //iteration 
-      System.out.println("iteration");
-      //Profile.get(getInt()).runAll();
-       //JavafxAppTry.list.setEditable(true);
-      //box.runAll();
-     
-
-   }
-   
-   
-   
+   }   
 }

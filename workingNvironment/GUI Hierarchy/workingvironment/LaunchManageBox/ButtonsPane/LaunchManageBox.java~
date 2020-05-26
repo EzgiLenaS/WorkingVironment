@@ -18,6 +18,7 @@ import javafx.stage.Window;
 import backEnd.*;
 import AddWirePopup.*; 
 import MainScreen.*;
+import ManageScreenPanel.*;
 
 public class LaunchManageBox extends VBox
    
@@ -108,7 +109,7 @@ public class LaunchManageBox extends VBox
          else if(e.getSource() == manageButton)
          {
             try{
-            MainScreen.getWindow().setScene(new Scene(new ManageScreenPanel()));
+            MainScreen.getWindow().setScene(new Scene(new ManageScreenPanel( box )));
             }
             catch(Exception ex){
                System.out.println(ex);
