@@ -35,28 +35,36 @@ import java.util.Arrays;
 public class MainScreenPanel extends HBox implements EventHandler<MouseEvent>
 {
    //properties
-   ListView<LaunchManageBox> list;
-   Stage window;
-   public Button button, deleteButton;
-   Box box;
-   Profile p;
+   private ListView<LaunchManageBox> list;
+   private Stage window;
+   private Button button, deleteButton;
+   private Box box;
+   private Profile p;
    
    // constructors
    public MainScreenPanel( Profile pro )
    {      
       super( 20 );
+      // Getting profile as a parameter
       p = pro;
+      
+      // Add Button
       button = new Button("Add Box");
       button.setPrefSize(95, 95);
+      
+      // Delete Button
       deleteButton = new Button("Delete");
       deleteButton.setPrefSize(95, 95);
+      
+      // Right Side of Scene
       VBox vBox = new VBox(25);
       vBox.setPadding(new Insets(20, 12, 15, 12));
+      
+      // Adding Buttons to the VBox
       button.setOnMouseClicked(this);
       deleteButton.setOnMouseClicked(this);
       vBox.getChildren().addAll(button, deleteButton);
-      
-      
+           
       //list of wires
       list = new ListView<LaunchManageBox>();
       list.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
@@ -68,19 +76,21 @@ public class MainScreenPanel extends HBox implements EventHandler<MouseEvent>
          list.setPrefSize(280 , 170);                  
       }
       
-      this.getChildren().addAll(list,vBox);
-      
+      // Adding ListView and VBox to the Scene
+      this.getChildren().addAll(list,vBox);      
    }
    
+   // Action Listener Method
    public void handle(MouseEvent e)
    {
-      if(e.getSource() == button)
+      if (e.getSource() == button) // if add button clicked
       {
          Box box = new Box( "newbx");
          list.getItems().addAll(new LaunchManageBox("New Box"+ (list.getItems().size() + 1) , box));
          p.getBoxes().add( box );
       }
-      if((e.getSource() == deleteButton) &&(ConfirmBox.display("Warning" , "Are you sure?")))
+      
+      if ((e.getSource() == deleteButton) &&(ConfirmBox.display("Warning" , "Are you sure?"))) // if delete button clicked
       {
          list.getItems().removeAll(list.getSelectionModel().getSelectedItems());
          ArrayList<Box> boxList;

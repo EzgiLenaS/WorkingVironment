@@ -39,9 +39,8 @@ public class MainScreenPanel extends HBox implements EventHandler<MouseEvent>
    Stage window;
    public Button button, deleteButton;
    Box box;
-   TextField textField;
    Profile p;
-      
+   
    // constructors
    public MainScreenPanel( Profile pro )
    {      
@@ -53,9 +52,10 @@ public class MainScreenPanel extends HBox implements EventHandler<MouseEvent>
       deleteButton.setPrefSize(95, 95);
       VBox vBox = new VBox(25);
       vBox.setPadding(new Insets(20, 12, 15, 12));
-      vBox.getChildren().addAll(button, deleteButton);
       button.setOnMouseClicked(this);
       deleteButton.setOnMouseClicked(this);
+      vBox.getChildren().addAll(button, deleteButton);
+      
       
       //list of wires
       list = new ListView<LaunchManageBox>();
@@ -67,14 +67,9 @@ public class MainScreenPanel extends HBox implements EventHandler<MouseEvent>
          list.getItems().addAll(new LaunchManageBox(( p.getBoxes().get(i)).getName() , p.getBoxes().get(i) ));
          list.setPrefSize(280 , 170);                  
       }
-                 
-        this.getChildren().addAll(list,vBox);
       
-   }
-   
-   public ListView<LaunchManageBox> getList()
-   {
-      return this.list;
+      this.getChildren().addAll(list,vBox);
+      
    }
    
    public void handle(MouseEvent e)
@@ -95,7 +90,7 @@ public class MainScreenPanel extends HBox implements EventHandler<MouseEvent>
             boxList.add( list.getItems().get(i).getBox());
          }
          p.setBoxes( boxList );
-            
+         
       }
    }
    
