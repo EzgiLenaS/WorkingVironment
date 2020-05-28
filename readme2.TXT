@@ -34,7 +34,7 @@ One needs to close and reopen the application to see the name changes.
 - Ezgi Lena Sönmez
 - Mert Tereci
 - Saitcan Başkol
-i did manage screen, other manage screen panels and other gui like fileorlink manage screen panel i helped my groupmates Berkan and Osman.
+i did manage screen, other manage screen panels and other gui like fileorlink main screen panel i helped my groupmates Berkan and Osman.
 In the manage screen, we are inputting and outputting files with serializable class, we are adding elements to our view, we are setting our scenes and their attributes.
 I used getter classes and static scene and windows variables to reach them in a different class otherwise reaching them will be very hard.
 I used action listener to changing scenes( a mouse listener).
