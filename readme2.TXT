@@ -44,6 +44,8 @@ One needs to close and reopen the application to see the name changes.
     Finally, I added everybutton and HBox into an VBox to start the scene. 			 
 - Ezgi Lena Sönmez
 - Mert Tereci
+    Me and Ezgi Lena worked on ManageScreenPanel.java, the manage screen GUI for the inside of a box. I learned to use Vbox class and developed understanding of using Java Api for a 
+    spesific goal. I used JDK 8 and Netbeans compiler.
 - Saitcan Başkol
     I did main screen, other main screen panels and other gui like fileorlink main screen panel i helped my groupmates Berkan and Osman.
     In the main screen, we are inputting and outputting files with serializable class, we are adding elements to our view, we are setting our scenes and their attributes.
