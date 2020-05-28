@@ -6,8 +6,9 @@ WorkingVironment
 - We worked as a team for the first time which was hard.
 - We realised that we can learn lots of thing independently.
 - Organising in group was hard so as a solution we divided group in to 3 teams to be more agile.
-- There were no consensus at some parts of the project continued for a time which stoped us ********** 
-  for devoloping our project more.
+- There were no consensus at some parts of the project continued for a time which stoped us 
+  for devoloping our project more. 
+  For example, 3 people in our group suggested using java swing package while 4 people in our group suggested javafx and we had a hard time coming to a conclusion.
 - We put more effort on designening properly even our UI.
 - We could have worked more cooperatively. We seperated our parts accordingly, however one team was unaware of the others. 
 They had known the other parts methods and such but we could have informed each other better.
