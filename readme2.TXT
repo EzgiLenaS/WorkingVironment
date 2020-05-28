@@ -29,6 +29,13 @@ One needs to close and reopen the application to see the name changes.
 - Eyüp Berkan Sivrikaya
 - Yiğit Ekin
 - Osman Semih Tiryaki
+	Actually, Me and Berkan and Saitcan worked together on discord most of the time and supported each other for most of problems.
+	As an individual, I wrote the MainScreenPanel class whose main mission is to initialize Main screen of our project.
+	I researched and used javafx 8 components such as VBox, Hbox, ListView and its related classes such as ObservableList and ObservableArrayList to search and edit items of a ListView.
+	However ListView is only the GUI part of the job and I had to update the profile whenever ListView has been shifted.
+	So I added setBoxes method to profile class provided by Yiğit and Arda in order to update profiles boxes property.
+	With this method I updated the boxes list of profile everytime something added or deleted via using ArrayList.
+	Finally, I added everybutton and HBox into an VBox to start the scene. 			 
 - Ezgi Lena Sönmez
 - Mert Tereci
 - Saitcan Başkol
