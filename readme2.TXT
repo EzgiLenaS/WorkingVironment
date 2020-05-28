@@ -31,11 +31,19 @@ One needs to close and reopen the application to see the name changes.
   and worked on the problem for transfering Box objects into UI.
   I also helped Saitcan and Osman in MainScreen and MainScreenPanel classes.
 - Yiğit Ekin
+    I primarily worked on the files AppOpener.java, Shortcut.java, WebPageOpener.java. 
+    I used JDK 8  
 - Osman Semih Tiryaki
 - Ezgi Lena Sönmez
 - Mert Tereci
 - Saitcan Başkol
+i did manage screen, other manage screen panels and other gui like fileorlink main screen panel i helped my groupmates Berkan and Osman.
+In the manage screen, we are inputting and outputting files with serializable class, we are adding elements to our view, we are setting our scenes and their attributes.
+I used getter classes and static scene and windows variables to reach them in a different class otherwise reaching them will be very hard.
+I used action listener to changing scenes( a mouse listener).
 - Arda Eren
+    I primarily worked on the files Box.java, Profile.java. 
+    I used JDK 8  
 
 
 
