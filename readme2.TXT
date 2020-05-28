@@ -43,6 +43,10 @@ One needs to close and reopen the application to see the name changes.
     With this method I updated the boxes list of profile everytime something added or deleted via using ArrayList.
     Finally, I added everybutton and HBox into an VBox to start the scene. 			 
 - Ezgi Lena Sönmez
+    Mert and me worked on ManageScreenPanel.java. 
+    I used the JavaFX 8 and worked on compiling the Box.java with our class to add links into one Box (for each Boxes).
+    I used Tableview, Vbox and Hboxes to show buttons textfields and names of links.
+    We could do a hierarchy for buttons, textfields, and methods for our class.
 - Mert Tereci
     Me and Ezgi Lena worked on ManageScreenPanel.java, the manage screen GUI for the inside of a box. I learned to use Vbox class and developed understanding of using Java Api for a 
     spesific goal. I used JDK 8 and Netbeans compiler.
