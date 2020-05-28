@@ -15,5 +15,11 @@ public abstract class Shortcut implements Serializable
     * @return none
     */ 
    abstract void run();
-   public abstract String getName();
+
+   /*
+    * abstract method for getting the name of the shortcut object 
+    * @param none
+    * @return String the name of the object
+    */ 
+   abstract String getName();
 } // end of class
