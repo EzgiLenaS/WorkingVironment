@@ -28,6 +28,8 @@ One needs to close and reopen the application to see the name changes.
 ## List of the group members' contributions
 - Eyüp Berkan Sivrikaya
 - Yiğit Ekin
+    I primarily worked on the files AppOpener.java, Shortcut.java, WebPageOpener.java,
+    I used JDK 8  
 - Osman Semih Tiryaki
 - Ezgi Lena Sönmez
 - Mert Tereci
@@ -37,6 +39,8 @@ In the manage screen, we are inputting and outputting files with serializable cl
 I used getter classes and static scene and windows variables to reach them in a different class otherwise reaching them will be very hard.
 I used action listener to changing scenes( a mouse listener).
 - Arda Eren
+    I primarily worked on the files Box.java, Profile.java, 
+    I used JDK 8  
 
 
 
