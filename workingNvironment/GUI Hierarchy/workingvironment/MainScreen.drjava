@@ -3,45 +3,45 @@
   <project autorefresh="false" build="Classes/" main="MainScreen.MainScreen" root="" work="">
     <createjar file=""/>
     <source>
-      <file active="true" name="ManageScreenPanel/ManageScreenPanel.java" package="ManageScreenPanel" timestamp="23-May-2020 02:30:57">
-        <select from="896" to="896"/>
-        <scroll column="3205" row="0"/>
+      <file active="true" name="MainScreen/MainScreen.java" package="MainScreen" timestamp="28-May-2020 10:57:19">
+        <select from="2088" to="2088"/>
+        <scroll column="2055" row="0"/>
+      </file>
+      <file name="ManageScreenPanel/ManageScreenPanel.java" package="ManageScreenPanel" timestamp="23-May-2020 02:30:57">
+        <select from="2088" to="2088"/>
+        <scroll column="2055" row="0"/>
       </file>
       <file name="LaunchManageBox/BoxDiscriptionLabel/BoxDiscriptionLabel.java" package="LaunchManageBox.BoxDiscriptionLabel" timestamp="23-May-2020 00:23:40">
-        <select from="896" to="896"/>
-        <scroll column="3205" row="0"/>
+        <select from="2088" to="2088"/>
+        <scroll column="2055" row="0"/>
       </file>
       <file name="MainScreenPanel/MainScreenPanel.java" package="MainScreenPanel" timestamp="26-May-2020 20:41:45">
-        <select from="896" to="896"/>
-        <scroll column="3205" row="0"/>
+        <select from="2088" to="2088"/>
+        <scroll column="2055" row="0"/>
       </file>
       <file name="backEnd/Profile.java" package="backEnd" timestamp="26-May-2020 20:41:45">
-        <select from="896" to="896"/>
-        <scroll column="3205" row="0"/>
+        <select from="2088" to="2088"/>
+        <scroll column="2055" row="0"/>
       </file>
       <file name="LaunchManageBox/ButtonsPane/LaunchManageBox.java" package="LaunchManageBox.ButtonsPane" timestamp="26-May-2020 21:13:07">
-        <select from="896" to="896"/>
-        <scroll column="3205" row="0"/>
+        <select from="2088" to="2088"/>
+        <scroll column="2055" row="0"/>
       </file>
       <file name="LaunchManageBox/Buttons/LaunchButton/LaunchButton.java" package="LaunchManageBox.Buttons.LaunchButton" timestamp="26-May-2020 21:14:23">
-        <select from="896" to="896"/>
-        <scroll column="3205" row="0"/>
+        <select from="2088" to="2088"/>
+        <scroll column="2055" row="0"/>
       </file>
       <file name="LaunchManageBox/Buttons/ManageButton/ManageButton.java" package="LaunchManageBox.Buttons.ManageButton" timestamp="26-May-2020 21:14:23">
-        <select from="896" to="896"/>
-        <scroll column="3205" row="0"/>
+        <select from="2088" to="2088"/>
+        <scroll column="2055" row="0"/>
       </file>
       <file name="LaunchManageBox/Buttons/LaunchManageButtons/LaunchManageButtons.java" package="LaunchManageBox.Buttons.LaunchManageButtons" timestamp="26-May-2020 21:15:08">
-        <select from="896" to="896"/>
-        <scroll column="3205" row="0"/>
+        <select from="2088" to="2088"/>
+        <scroll column="2055" row="0"/>
       </file>
       <file name="MainScreenPanel/popup/ConfirmBox.java" package="popup" timestamp="26-May-2020 21:27:37">
-        <select from="896" to="896"/>
-        <scroll column="3205" row="0"/>
-      </file>
-      <file name="MainScreen/MainScreen.java" package="MainScreen" timestamp="26-May-2020 21:36:56">
-        <select from="896" to="896"/>
-        <scroll column="3205" row="0"/>
+        <select from="2088" to="2088"/>
+        <scroll column="2055" row="0"/>
       </file>
     </source>
     <included/>

@@ -77,16 +77,13 @@ public class MainScreen extends Application
       
    }
    
+   // Method to retun Stage object to change it in other classes
    public static Stage getWindow()
    {
       return window;
    }
    
-   public static Scene getScene2()
-   {
-      return scene2;
-   }
-   
+   // Method to retun Scene object to change the Stage in other classes
    public static Scene getScene()
    {
       return scene;

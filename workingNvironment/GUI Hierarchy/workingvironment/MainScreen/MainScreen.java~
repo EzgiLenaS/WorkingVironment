@@ -1,5 +1,10 @@
 package MainScreen;
 
+/*
+ * @author Saitcan Ba?kol
+ * @version 1.2
+ */
+
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -15,15 +20,10 @@ import javafx.scene.control.cell.TextFieldListCell;
 import javafx.scene.control.*;
 import javafx.event.ActionEvent;
 import javafx.event.*;
-import LaunchManageBox.Buttons.LaunchButton.LaunchButton;
 import LaunchManageBox.ButtonsPane.LaunchManageBox;
 import javafx.scene.input.MouseEvent;
 import backEnd.*;
-import javafx.stage.FileChooser;
-import javafx.scene.control.TextField;
 import MainScreenPanel.*;
-import LaunchManageBox.Buttons.ManageButton.*;
-import ManageScreenPanel.*;
 import java.io.*;
 
 
@@ -31,15 +31,11 @@ public class MainScreen extends Application
 
 {
    //properties
-   static Stage window;
-   static Scene scene;
-   public static Scene  scene3;
-   Button button, button2;
-   Box box;
-   TextField textField;
-   Profile p;
-   ManageScreenPanel layout3;
-   MainScreenPanel layout;
+   private static Stage window;
+   private static Scene scene;
+   private static Scene  scene2;
+   private Profile p;
+   private MainScreenPanel mainScreenLayout;
    
    @Override
    public void start(Stage primaryStage) throws Exception
@@ -64,15 +60,18 @@ public class MainScreen extends Application
       { 
          p = new Profile();
       }
-      layout = new MainScreenPanel( p );
 
-      
-      scene = new Scene(layout,450,400);
-      
-      window.setScene(scene); 
-      window.setResizable(false);
+      window.setResizable(false); 
+      //title
       window.setTitle("WorkingVirement");
+      //icon
       window.getIcons().add(new Image("/icons/output-onlinejpgtools.png"));
+      mainScreenLayout = new MainScreenPanel( p );
+      /*creating first scene from mainScreenObject 
+      for user to choose to launch box*/
+      scene = new Scene(mainScreenLayout,450,400);
+      
+      window.setScene(scene); // setting initial scene 
       
       window.show();
       
@@ -83,9 +82,9 @@ public class MainScreen extends Application
       return window;
    }
    
-   public static Scene getScene3()
+   public static Scene getScene2()
    {
-      return scene3;
+      return scene2;
    }
    
    public static Scene getScene()
