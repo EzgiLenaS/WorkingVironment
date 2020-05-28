@@ -28,11 +28,15 @@ One needs to close and reopen the application to see the name changes.
 ## List of the group members' contributions
 - Eyüp Berkan Sivrikaya
 - Yiğit Ekin
+    I primarily worked on the files AppOpener.java, Shortcut.java, WebPageOpener.java,
+    I used JDK 8  
 - Osman Semih Tiryaki
 - Ezgi Lena Sönmez
 - Mert Tereci
 - Saitcan Başkol
 - Arda Eren
+    I primarily worked on the files Box.java, Profile.java, 
+    I used JDK 8  
 
 
 
