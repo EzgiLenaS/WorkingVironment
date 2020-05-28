@@ -27,7 +27,13 @@ One needs to close and reopen the application to see the name changes.
 
 ## List of the group members' contributions
 - Eyüp Berkan Sivrikaya
+    I wrote the BoxView hiearachy(LaunchButton, ManageButton, label, LaunchManageBox)
+    in that part i used the javaFX 8 classes and extended them according to our needs.
+    and worked on the problem for transfering Box objects into UI.
+    I also helped Saitcan and Osman in MainScreen and MainScreenPanel classes.
 - Yiğit Ekin
+    I primarily worked on the files AppOpener.java, Shortcut.java, WebPageOpener.java. 
+    I used JDK 8  
 - Osman Semih Tiryaki
 	Actually, Me and Berkan and Saitcan worked together on discord most of the time and supported each other for most of problems.
 	As an individual, I wrote the MainScreenPanel class whose main mission is to initialize Main screen of our project.
@@ -39,7 +45,13 @@ One needs to close and reopen the application to see the name changes.
 - Ezgi Lena Sönmez
 - Mert Tereci
 - Saitcan Başkol
+    I did manage screen, other manage screen panels and other gui like fileorlink main screen panel i helped my groupmates Berkan and Osman.
+    In the manage screen, we are inputting and outputting files with serializable class, we are adding elements to our view, we are setting our scenes and their attributes.
+    I used getter classes and static scene and windows variables to reach them in a different class otherwise reaching them will be very hard.
+    I used action listener to changing scenes( a mouse listener).
 - Arda Eren
+    I primarily worked on the files Box.java, Profile.java. 
+    I used JDK 8  
 
 
 
