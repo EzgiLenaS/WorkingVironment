@@ -27,7 +27,8 @@ One needs to close and reopen the application to see the name changes.
 
 ## List of the group members' contributions
 - Eyüp Berkan Sivrikaya
-*
+- Yiğit Ekin
+    
 *
 *
 *
