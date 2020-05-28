@@ -63,7 +63,7 @@ public class MainScreen extends Application
 
       window.setResizable(false); 
       //title
-      window.setTitle("WorkingVirement");
+      window.setTitle("WorkingVironment");
       //icon
       window.getIcons().add(new Image("/icons/output-onlinejpgtools.png"));
       mainScreenLayout = new MainScreenPanel( p );
