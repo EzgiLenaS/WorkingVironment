@@ -28,6 +28,7 @@ One needs to close and reopen the application to see the name changes.
 ## List of the group members' contributions
 - Eyüp Berkan Sivrikaya
     I wrote the BoxView hiearachy(LaunchButton, ManageButton, label, LaunchManageBox)
+    in that part i used the javaFX pacakge objects and extended them according to our needs.
     and worked on the problem for transfering Box objects into UI.
     I also helped Saitcan and Osman in MainScreen and MainScreenPanel classes.
 - Yiğit Ekin
