@@ -10,7 +10,7 @@ WorkingVironment
   from devoloping our project more. 
   For example, 3 people in our group suggested using java swing package while 4 people in our group suggested javafx and we had a hard time coming to a conclusion.
 - We put more effort on designening properly even our UI.
-- We could have worked more cooperatively. We seperated our parts accordingly, however teams was unaware of the others. 
+- We could have worked more cooperatively. We seperated our parts accordingly, however teams were unaware of the others. 
 They had known the other parts methods and such but we could have informed each other better.
 - Considering what we were at the beginning of the process and what we achieved as a team, we are proud of what we have done. 
 However, seeing what we had achieved and knowing that we are more than what we think we are, we are hungry for more.
