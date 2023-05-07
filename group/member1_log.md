@@ -90,7 +90,7 @@ Now we are happy what we did
 We still think that yes we would do better than this but... yes we are happy right now (:
 And thank you sooo much to my group friends for their exortion (:
 
-
+Use `git status` to list all new or modified files that haven't yet been committed.
 
 
 
