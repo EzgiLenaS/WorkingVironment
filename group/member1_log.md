@@ -91,7 +91,7 @@ We still think that yes we would do better than this but... yes we are happy rig
 And thank you sooo much to my group friends for their exortion (:
 
 
-![impact_graph](https://user-images.githubusercontent.com/63406909/236679008-0ad781c8-ef55-4bc0-9fa5-e3e301dc4980.PNG)
+
 
 
 
