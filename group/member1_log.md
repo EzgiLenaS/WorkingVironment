@@ -87,11 +87,12 @@ Today we met on Zoom and record the video
 And I wanted to edit the video and my friends let me to do it 
 I hope it looks nice (:
 Now we are happy what we did 
+
 We still think that yes we would do better than this but... yes we are happy right now (:
 And thank you sooo much to my group friends for their exortion (:
 
 Use `git status` to list all new or modified files that haven't yet been committed.
-
+![impact_graph](https://user-images.githubusercontent.com/63406909/236908832-d4cb4c69-d3de-4982-b4b7-45626dbd8748.PNG)
 
 
 
